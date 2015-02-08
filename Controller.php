@@ -11,6 +11,7 @@ namespace Piwik\Plugins\ExcludeByDDNS;
 use Piwik\IP;
 use Piwik\Option;
 use Piwik\Piwik;
+use Piwik\Tracker\Cache;
 use Piwik\View;
 
 /**
@@ -26,5 +27,6 @@ class Controller extends \Piwik\Plugin\ControllerAdmin
         $user = Piwik::getCurrentUserLogin();
 
         Option::set('ExcludeByDDNS.'.$user, $ip);
+        Cache::clearCacheGeneral();
     }
 }

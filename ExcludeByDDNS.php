@@ -10,19 +10,23 @@ namespace Piwik\Plugins\ExcludeByDDNS;
 use Piwik\Common;
 use Piwik\IP;
 use Piwik\Option;
+use Piwik\Tracker\Cache;
 
 /**
  *
  */
 class ExcludeByDDNS extends \Piwik\Plugin
 {
+    const __CACHE_ID__ = 'ExcludeByDDNS';
+
     /**
      * @see Piwik\Plugin::getListHooksRegistered
      */
     public function getListHooksRegistered()
     {
         return array(
-            'Tracker.isExcludedVisit' => 'checkIfIpIsExcluded',
+            'Tracker.isExcludedVisit'           => 'checkIfIpIsExcluded',
+            'Tracker.setTrackerCacheGeneral'    => 'setTrackerCacheGeneral',
         );
     }
 
@@ -33,7 +37,8 @@ class ExcludeByDDNS extends \Piwik\Plugin
             return;
         }
 
-        $excludedIPs = $this->getExcludedIPs();
+        $cache = Cache::getCacheGeneral();
+        $excludedIPs = $cache[self::__CACHE_ID__];
 
         if (empty($excludedIPs)) {
             return; // Nothing to exclude
@@ -44,6 +49,11 @@ class ExcludeByDDNS extends \Piwik\Plugin
             Common::printDebug('Visitor IP ' . $ip->toString() . ' is excluded from being tracked');
             $exclude = true;
         }
+    }
+
+    public function setTrackerCacheGeneral(&$cacheContent)
+    {
+        $cacheContent[self::__CACHE_ID__] = $this->getExcludedIPs();
     }
 
     protected function getExcludedIPs()
