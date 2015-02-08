@@ -1,0 +1,5 @@
+{
+    "ExcludeByDDNS": {
+        "PluginDescription": "This plugin allows you to dynamically exclude a IP using DDNS update"
+    }
+}
