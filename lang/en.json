@@ -1,5 +1,15 @@
 {
     "ExcludeByDDNS": {
-        "PluginDescription": "This plugin allows you to dynamically exclude a IP using DDNS update"
+        "PluginDescription": "This plugin allows you to dynamically exclude a IP using DDNS update",
+        "DDNSSettings": "DDNS Settings",
+        "DDNSSettingsDescription": "Here you can change the settings used to exclude your dynamic ip address.",
+        "CurrentExcludedIp": "Your currently excluded IP is: %s",
+        "NoIpExcluded": "You have currently no excluded IP set.",
+        "DDNSUpdateExclusion": "Use DDNS update to refresh the excluded IP",
+        "DDNSUpdateExclusionDesc": "In order to exclude your dynamic ip address using DDNS update, use the following url:",
+        "DDNSUpdateExclusionDesc2": "You do not need to pass any other data like hostname, username or password. Leave them empty or type in anything if the value is required.",
+        "HostnameExclusion": "Use automatic updated hostname to refresh excluded IP",
+        "HostnameExclusionDesc": "If you are already using a DDNS update to update a specific hostname you can use this hostname to refresh the excluded IP.",
+        "HostnameExclusionDesc2": "The update will be done as an hourly task resolving the hostname's IP"
     }
 }

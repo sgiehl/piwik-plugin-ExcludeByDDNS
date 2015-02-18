@@ -1,0 +1,34 @@
+{% extends 'user.twig' %}
+
+{% block content %}
+    <h2>{{ 'ExcludeByDDNS_DDNSSettings'|translate }}</h2>
+
+    <p>{{ 'ExcludeByDDNS_DDNSSettingsDescription'|translate }}</p>
+
+    {% if excludedIp %}
+        {{ 'ExcludeByDDNS_CurrentExcludedIp'|translate(excludedIp) }}
+    {% else %}
+        {{ 'ExcludeByDDNS_NoIpExcluded'|translate }}
+    {% endif %}
+
+    <h3>{{ 'ExcludeByDDNS_DDNSUpdateExclusion'|translate }}</h3>
+
+    <p>{{ 'ExcludeByDDNS_DDNSUpdateExclusionDesc'|translate }}</p>
+
+    <pre>{{ updateUrl }}</pre>
+
+    <p>{{ 'ExcludeByDDNS_DDNSUpdateExclusionDesc2'|translate }}</p>
+
+
+    <h3>{{ 'ExcludeByDDNS_HostnameExclusion'|translate }}</h3>
+
+    <p>{{ 'ExcludeByDDNS_HostnameExclusionDesc'|translate }}</p>
+
+    <form method="post" action="{{ linkTo([]) }}">
+        <input type="hidden" name="nonce" value="{{ nonce }}" />
+        <input type="text" name="excludedHostname" id="excludedHostname" value="{{ excludedHostname }}" /> <input type="submit" value="{{ 'General_Save'|translate }}" />
+    </form>
+
+    <p>{{ 'ExcludeByDDNS_HostnameExclusionDesc2'|translate }}</p>
+
+{% endblock %}
