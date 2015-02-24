@@ -32,6 +32,8 @@ class Controller extends \Piwik\Plugin\ControllerAdmin
         if ($nonce !== false && Nonce::verifyNonce('Piwik_ExcludeHostname'.Piwik::getCurrentUserLogin(), $nonce)) {
             if($hostname) {
                 Option::set('ExcludeByHostname.'.Piwik::getCurrentUserLogin(), $hostname);
+                $ip = gethostbyname($hostname);
+                Option::set('ExcludeByDDNS.'.Piwik::getCurrentUserLogin(), $ip);
             } else {
                 Option::delete('ExcludeByHostname.'.Piwik::getCurrentUserLogin());
             }
