@@ -1,4 +1,4 @@
-{% extends 'user.twig' %}
+{% extends ['user.twig', 'admin.twig'] %}
 
 {% block content %}
     <h2>{{ 'ExcludeByDDNS_DDNSSettings'|translate }}</h2>

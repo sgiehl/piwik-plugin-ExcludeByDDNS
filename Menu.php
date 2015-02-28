@@ -17,6 +17,16 @@ class Menu extends \Piwik\Plugin\Menu
 {
     public function configureUserMenu(MenuUser $menu)
     {
+        if (!method_exists($menu, 'addPersonalItem')) {
+            $menu->add(
+                'CoreAdminHome_MenuManage',
+                'ExcludeByDDNS_DDNSSettings',
+                array('module' => 'ExcludeByDDNS', 'action' => 'index'),
+                15,
+                'ExcludeByDDNS_DDNSSettingsDescription'
+            );
+            return;
+        }
         $menu->addPersonalItem(
             'ExcludeByDDNS_DDNSSettings',
             $this->urlForAction('index'),
