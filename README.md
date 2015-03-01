@@ -6,11 +6,12 @@ This plugin allows the Piwik users to dynamically exclude their IP address using
 
 ### Requirements
 
-[Piwik](https://github.com/piwik/piwik) 2.0.4 or higher is required.
+[Piwik](https://github.com/piwik/piwik) 2.4.0 or higher is required.
 
 ### Features
 
 - Exclude one IP for each Piwik user 
+- Exclude and IP using an already updated hostname
 
 ## FAQ
 
@@ -24,7 +25,8 @@ There is no need to set user, password or domain name.
 
 ## Changelog
 
-- Version 0.1 - Alpha Release
+- Version 0.2.0 - Beta Release
+- Version 0.1.0 - Alpha Release
 
 ## Support
 
