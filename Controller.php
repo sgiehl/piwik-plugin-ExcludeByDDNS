@@ -9,6 +9,7 @@
 namespace Piwik\Plugins\ExcludeByDDNS;
 
 use Piwik\Common;
+use Piwik\Date;
 use Piwik\IP;
 use Piwik\Nonce;
 use Piwik\Option;
@@ -22,6 +23,30 @@ use Piwik\View;
  */
 class Controller extends \Piwik\Plugin\ControllerAdmin
 {
+    public function admin()
+    {
+        Piwik::checkUserHasSomeAdminAccess();
+
+        $view = new View('@ExcludeByDDNS/admin');
+        $this->setGeneralVariablesView($view);
+
+        $view->exclusions = array();
+
+        $users = Storage::getAllUsersWithConfig();
+        foreach ($users AS $user) {
+            $storage = new Storage($user);
+            $lastUpdated = $storage->getLastUpdated();
+            $view->exclusions[] = array(
+                'username' => $user,
+                'ip' => $storage->getIp(),
+                'hostname' => $storage->getHostname(),
+                'lastUpdated' => $lastUpdated ? Date::factory($lastUpdated)->getLocalized(Piwik::translate('CoreHome_DateFormat') . ' %time%') : ''
+            );
+        }
+
+        return $view->render();
+    }
+
     public function index()
     {
         Piwik::checkUserHasSomeViewAccess();
@@ -29,13 +54,15 @@ class Controller extends \Piwik\Plugin\ControllerAdmin
         $nonce    = Common::getRequestVar('nonce', false);
         $hostname = Common::getRequestVar('excludedHostname', false);
 
+        $storage = new Storage(Piwik::getCurrentUserLogin());
+
         if ($nonce !== false && Nonce::verifyNonce('Piwik_ExcludeHostname'.Piwik::getCurrentUserLogin(), $nonce)) {
             if($hostname) {
-                Option::set('ExcludeByHostname.'.Piwik::getCurrentUserLogin(), $hostname);
+                $storage->setHostname($hostname);
                 $ip = gethostbyname($hostname);
-                Option::set('ExcludeByDDNS.'.Piwik::getCurrentUserLogin(), $ip);
+                $storage->setIp($ip);
             } else {
-                Option::delete('ExcludeByHostname.'.Piwik::getCurrentUserLogin());
+                $storage->setHostname('');
             }
         }
 
@@ -48,8 +75,10 @@ class Controller extends \Piwik\Plugin\ControllerAdmin
                 'token_auth' => Piwik::getCurrentUserTokenAuth()
             ));
 
-        $view->excludedIp = Option::get('ExcludeByDDNS.'.Piwik::getCurrentUserLogin());
-        $view->excludedHostname = Option::get('ExcludeByHostname.'.Piwik::getCurrentUserLogin());
+        $view->excludedIp = $storage->getIp();
+        $view->excludedHostname = $storage->getHostname();
+        $lastUpdated = $storage->getLastUpdated();
+        $view->lastUpdated = $lastUpdated ? Date::factory($lastUpdated)->getLocalized(Piwik::translate('CoreHome_DateFormat') . ' %time%') : '';
         $view->nonce = Nonce::getNonce('Piwik_ExcludeHostname'.Piwik::getCurrentUserLogin(), 3600);
 
         return $view->render();
@@ -63,7 +92,8 @@ class Controller extends \Piwik\Plugin\ControllerAdmin
         $ip = IP::getIpFromHeader();
         $user = Piwik::getCurrentUserLogin();
 
-        Option::set('ExcludeByDDNS.'.$user, $ip);
+        $storage = new Storage($user);
+        $storage->setIp($ip);
         Cache::clearCacheGeneral();
     }
 }

@@ -8,33 +8,25 @@
  */
 namespace Piwik\Plugins\ExcludeByDDNS;
 
-use Piwik\Option;
-use Piwik\Settings\Storage;
+use Piwik\Tracker\Cache;
 
 class Tasks extends \Piwik\Plugin\Tasks
 {
-    public static function getExcludeByHostname()
-    {
-        return Option::getLike('ExcludeByHostname.%');
-    }
-
     public function schedule()
     {
-        if (self::getExcludeByHostname()) {
-            $this->hourly('updateIPs');  // method will be executed once every hour
-        }
+        $this->hourly('updateIPs');  // method will be executed once every hour
     }
 
     public function updateIPs()
     {
-        $excludes = self::getExcludeByHostname();
-
-        foreach($excludes AS $option => $hostname) {
-
-            $user = substr($option, 18);
-            $ip = gethostbyname($hostname);
-
-            Option::set('ExcludeByDDNS.'.$user, $ip);
+        foreach(Storage::getAllUsersWithConfig() AS $user) {
+            $storage = new Storage($user);
+            if(($hostname = $storage->getHostname())) {
+                $ip = gethostbyname($hostname);
+                $storage->setIp($ip);
+            }
         }
+
+        Cache::clearCacheGeneral();
     }
 }

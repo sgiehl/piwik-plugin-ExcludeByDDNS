@@ -6,7 +6,7 @@
     <p>{{ 'ExcludeByDDNS_DDNSSettingsDescription'|translate }}</p>
 
     {% if excludedIp %}
-        {{ 'ExcludeByDDNS_CurrentExcludedIp'|translate(excludedIp) }}
+        {{ 'ExcludeByDDNS_CurrentExcludedIp'|translate(excludedIp, lastUpdated) }}
     {% else %}
         {{ 'ExcludeByDDNS_NoIpExcluded'|translate }}
     {% endif %}

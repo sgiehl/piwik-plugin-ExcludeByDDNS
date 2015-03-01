@@ -1,0 +1,33 @@
+{% extends 'admin.twig' %}
+
+{% block content %}
+    <h2>{{ 'ExcludeByDDNS_DDNSSettings'|translate }}</h2>
+
+    <table class="tableForm dataTable entityTable">
+        <thead>
+        <tr>
+            <th>{{ 'General_Username'|translate }}</th>
+            <th>{{ 'General_IP'|translate }}</th>
+            <th>{{ 'ExcludeByDDNS_Hostname'|translate }}</th>
+            <th>{{ 'CorePluginsAdmin_LastUpdated'|translate }}</th>
+        </tr>
+        </thead>
+        <tbody>
+        {% if exclusions|length %}
+            {% for exclusion in exclusions %}
+                <tr>
+                    <td>{{ exclusion.username}}</td>
+                    <td>{{ exclusion.ip}}</td>
+                    <td>{{ exclusion.hostname}}</td>
+                    <td>{{ exclusion.lastUpdated}}</td>
+                </tr>
+            {% endfor %}
+        {% else %}
+            <tr>
+                <td colspan="4"><br/>{{ 'ExcludeByDDNS_NoExclusionsSet'|translate }}<br/><br/></td>
+            </tr>
+        {% endif %}
+        </tbody>
+    </table>
+
+{% endblock %}

@@ -8,16 +8,15 @@
  */
 namespace Piwik\Plugins\ExcludeByDDNS;
 
+use Piwik\Menu\MenuAdmin;
 use Piwik\Menu\MenuUser;
-use Piwik\Piwik;
-use Piwik\Plugins\MobileMessaging\MobileMessaging;
-use Piwik\Plugins\MobileMessaging\API as APIMobileMessaging;
 
 class Menu extends \Piwik\Plugin\Menu
 {
     public function configureUserMenu(MenuUser $menu)
     {
         if (!method_exists($menu, 'addPersonalItem')) {
+            // menu fallback for piwik < 1.11
             $menu->add(
                 'CoreAdminHome_MenuManage',
                 'ExcludeByDDNS_DDNSSettings',
@@ -30,6 +29,27 @@ class Menu extends \Piwik\Plugin\Menu
         $menu->addPersonalItem(
             'ExcludeByDDNS_DDNSSettings',
             $this->urlForAction('index'),
+            15,
+            'ExcludeByDDNS_DDNSSettingsDescription'
+        );
+    }
+
+    public function configureAdminMenu(MenuAdmin $menu)
+    {
+        if (!method_exists($menu, 'addDiagnosticItem')) {
+            // menu fallback for piwik < 1.11
+            $menu->add(
+                'CoreAdminHome_MenuManage',
+                'ExcludeByDDNS_DDNSSettings',
+                array('module' => 'ExcludeByDDNS', 'action' => 'admin'),
+                15,
+                'ExcludeByDDNS_DDNSSettingsDescription'
+            );
+            return;
+        }
+        $menu->addDiagnosticItem(
+            'ExcludeByDDNS_DDNSSettings',
+            $this->urlForAction('admin'),
             15,
             'ExcludeByDDNS_DDNSSettingsDescription'
         );
