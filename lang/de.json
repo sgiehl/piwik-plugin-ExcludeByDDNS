@@ -1,0 +1,17 @@
+{
+    "ExcludeByDDNS": {
+        "PluginDescription": "Dieses Plugin erlaubt Ihnen ihre dynamische IP mit Hilfe einer DDNS-Aktualisierung auszuschließen.",
+        "DDNSSettings": "DDNS Einstellungen",
+        "DDNSSettingsDescription": "Hier können Sie Ihre Einstellungen zum Ausschluss Ihrer dynamischen IP vornehmen.",
+        "CurrentExcludedIp": "Ihre aktuell ausgeschlossene IP ist: %s (Zuletzt aktualisiert: %s)",
+        "NoIpExcluded": "Sie haben aktuell keine IP für den Ausschluss gesetzt.",
+        "DDNSUpdateExclusion": "DDNS-Aktualisierung für den Ausschliss verwernden",
+        "DDNSUpdateExclusionDesc": "Um eine IP-Adresse mit Hilfe einer DDNS-Aktualisierung auszuschließen, verwenden Sie folgende URL:",
+        "DDNSUpdateExclusionDesc2": "Sie müssen keine weiteren Daten wie Hostname, Benutzer oder Passwort übergeben. Lassen Sie diese leer oder tragen Sie beliebige Werte ein, sollte dies erforderlich sein.",
+        "HostnameExclusion": "Einen über DDNS aktualisierten Hostnamen zum Ausschluss verwenden.",
+        "HostnameExclusionDesc": "Sollten Sie DDNS bereits zur Aktualisierung eines Hostnamen verwenden, können Sie diesen verwenden um die IP-Adresse auszuschließen.",
+        "HostnameExclusionDesc2": "Die Aktualisierug wird stündlich durch Auflösung des Hostnamen erfolgen.",
+        "NoExclusionsSet": "Aktuell sind keine Ausschlüsse konfiguriert.",
+        "Hostname": "Hostname"
+    }
+}
