@@ -40,18 +40,16 @@ class Menu extends \Piwik\Plugin\Menu
             // menu fallback for piwik < 1.11
             $menu->add(
                 'CoreAdminHome_MenuManage',
-                'ExcludeByDDNS_DDNSSettings',
+                'ExcludeByDDNS_DDNSStatus',
                 array('module' => 'ExcludeByDDNS', 'action' => 'admin'),
-                15,
-                'ExcludeByDDNS_DDNSSettingsDescription'
+                15
             );
             return;
         }
         $menu->addDiagnosticItem(
-            'ExcludeByDDNS_DDNSSettings',
+            'ExcludeByDDNS_DDNSStatus',
             $this->urlForAction('admin'),
-            15,
-            'ExcludeByDDNS_DDNSSettingsDescription'
+            15
         );
     }
 }

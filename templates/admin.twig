@@ -1,7 +1,7 @@
 {% extends 'admin.twig' %}
 
 {% block content %}
-    <h2>{{ 'ExcludeByDDNS_DDNSSettings'|translate }}</h2>
+    <h2>{{ 'ExcludeByDDNS_DDNSStatus'|translate }}</h2>
 
     <table class="tableForm dataTable entityTable">
         <thead>
@@ -30,4 +30,6 @@
         </tbody>
     </table>
 
+    <br /><br />
+    <a href="{{ linkTo({'module': 'ExcludeByDDNS', 'action': 'index'}) }}">{{ 'ExcludeByDDNS_DDNSSettings'|translate }}</a>
 {% endblock %}
