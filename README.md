@@ -15,6 +15,15 @@ This plugin allows the Piwik users to dynamically exclude their IP address using
 
 ## FAQ
 
+__Which update method should i use, _DDNS Update_ or _DDNS Hostname_?__
+
+If available, ___DDNS Update___ is recommended. This method is a bit more complicated to set up, but it leads to immediately updated IP's, as the client will trigger the update whenever a new IP is assigned.
+But it may not be viable for all users, eg. 
+* Not all DDNS clients allow custom update-URL's.
+* The client may be already serving another Server and have no ability to talk to multiple Servers at the same time.
+
+So, the ___DDNS Hostname___ can be an alternative. Use a DDNS Service that is compatible with your client and enter the hostname from there to have the plugin resolve your dynamic IP. The downside: Updating happens via a sheduled task every hour, so there might be small windows with the new IP still being tracked, but not the old one.
+
 __What data do I need to set for DDNS Update__
 
 You need to set the following URL to be triggered for an update.
