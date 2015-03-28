@@ -24,6 +24,9 @@
 
     <p>{{ 'ExcludeByDDNS_HostnameExclusionDesc'|translate }}</p>
 
+    {% if hostnameError is defined %}
+    <p class="error">{{ 'ExcludeByDDNS_HostnameError'|translate }}</p>
+    {% endif %}
     <form method="post" action="{{ linkTo([]) }}">
         <input type="hidden" name="nonce" value="{{ nonce }}" />
         <input type="text" name="excludedHostname" id="excludedHostname" value="{{ excludedHostname }}" /> <input type="submit" value="{{ 'General_Save'|translate }}" />

@@ -58,18 +58,25 @@ class Controller extends \Piwik\Plugin\ControllerAdmin
 
         $storage = new Storage(Piwik::getCurrentUserLogin());
 
+        $view = new View('@ExcludeByDDNS/index');
+        $this->setBasicVariablesView($view);
+        $view->excludedHostname = $storage->getHostname();
+
         if ($nonce !== false && Nonce::verifyNonce('Piwik_ExcludeHostname'.Piwik::getCurrentUserLogin(), $nonce)) {
             if($hostname) {
-                $storage->setHostname($hostname);
                 $ip = gethostbyname($hostname);
-                $storage->setIp($ip);
+
+                if ($ip != $hostname) {
+                    $storage->setHostname($hostname);
+                    $storage->setIp($ip);
+                } else {
+                    $view->excludedHostname = $hostname;
+                    $view->hostnameError = true;
+                }
             } else {
                 $storage->setHostname('');
             }
         }
-
-        $view = new View('@ExcludeByDDNS/index');
-        $this->setBasicVariablesView($view);
 
         $view->updateUrl = Url::getCurrentUrlWithoutQueryString(false) .'?'. Url::getQueryStringFromParameters(array(
                 'module' => 'ExcludeByDDNS',
@@ -81,7 +88,6 @@ class Controller extends \Piwik\Plugin\ControllerAdmin
         $timezone       = $website->getTimezone();
 
         $view->excludedIp = $storage->getIp();
-        $view->excludedHostname = $storage->getHostname();
         $lastUpdated = $storage->getLastUpdated();
         $view->lastUpdated = $lastUpdated ? Date::factory($lastUpdated, $timezone)->getLocalized(Piwik::translate('CoreHome_DateFormat') . ' %time%') : '';
         $view->nonce = Nonce::getNonce('Piwik_ExcludeHostname'.Piwik::getCurrentUserLogin(), 3600);

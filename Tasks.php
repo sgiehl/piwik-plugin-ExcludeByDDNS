@@ -23,7 +23,9 @@ class Tasks extends \Piwik\Plugin\Tasks
             $storage = new Storage($user);
             if(($hostname = $storage->getHostname())) {
                 $ip = gethostbyname($hostname);
-                $storage->setIp($ip);
+                if ($ip != $hostname) {
+                    $storage->setIp($ip);
+                }
             }
         }
 

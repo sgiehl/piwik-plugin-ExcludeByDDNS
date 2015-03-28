@@ -13,6 +13,7 @@
         "HostnameExclusionDesc": "If you are already using a DDNS update to update a specific hostname you can use this hostname to refresh the excluded IP.",
         "HostnameExclusionDesc2": "The update will be done as an hourly task resolving the hostname's IP",
         "NoExclusionsSet": "There are currently no exclusions configured.",
-        "Hostname": "Hostname"
+        "Hostname": "Hostname",
+        "HostnameError": "Unable to resolve the IP of the given hostname"
     }
 }

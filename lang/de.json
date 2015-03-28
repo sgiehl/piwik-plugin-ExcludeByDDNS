@@ -13,6 +13,7 @@
         "HostnameExclusionDesc": "Sollten Sie DDNS bereits zur Aktualisierung eines Hostnamen verwenden, können Sie diesen verwenden um die IP-Adresse auszuschließen.",
         "HostnameExclusionDesc2": "Die Aktualisierug wird stündlich durch Auflösung des Hostnamen erfolgen.",
         "NoExclusionsSet": "Aktuell sind keine Ausschlüsse konfiguriert.",
-        "Hostname": "Hostname"
+        "Hostname": "Hostname",
+        "HostnameError": "Die IP-Adresse für den angegebenen Hostnamen konnte nicht aufgelöst werden."
     }
 }
