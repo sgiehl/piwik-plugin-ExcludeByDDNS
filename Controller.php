@@ -14,6 +14,7 @@ use Piwik\IP;
 use Piwik\Nonce;
 use Piwik\Option;
 use Piwik\Piwik;
+use Piwik\Site;
 use Piwik\Tracker\Cache;
 use Piwik\Url;
 use Piwik\View;
@@ -51,6 +52,7 @@ class Controller extends \Piwik\Plugin\ControllerAdmin
     {
         Piwik::checkUserHasSomeViewAccess();
 
+        $idSite   = Common::getRequestVar('idSite', false);
         $nonce    = Common::getRequestVar('nonce', false);
         $hostname = Common::getRequestVar('excludedHostname', false);
 
@@ -75,10 +77,13 @@ class Controller extends \Piwik\Plugin\ControllerAdmin
                 'token_auth' => Piwik::getCurrentUserTokenAuth()
             ));
 
+        $website        = new Site($idSite);
+        $timezone       = $website->getTimezone();
+
         $view->excludedIp = $storage->getIp();
         $view->excludedHostname = $storage->getHostname();
         $lastUpdated = $storage->getLastUpdated();
-        $view->lastUpdated = $lastUpdated ? Date::factory($lastUpdated)->getLocalized(Piwik::translate('CoreHome_DateFormat') . ' %time%') : '';
+        $view->lastUpdated = $lastUpdated ? Date::factory($lastUpdated, $timezone)->getLocalized(Piwik::translate('CoreHome_DateFormat') . ' %time%') : '';
         $view->nonce = Nonce::getNonce('Piwik_ExcludeHostname'.Piwik::getCurrentUserLogin(), 3600);
 
         return $view->render();
