@@ -26,10 +26,18 @@ So, the ___DDNS Hostname___ can be an alternative. Use a DDNS Service that is co
 
 __What data do I need to set for DDNS Update__
 
-You need to set the following URL to be triggered for an update.
+You need to set a custom URL to be triggered for an update.
+Your personal update-URL is shown in your piwik installation (user-menu > Personal > DDNS Settings).
+
+The URL has the following scheme:
 ```
-http://piwik.url/index.php?module=ExcludeByDDNS&action=update&token_auth={token_auth}
-``` 
+http{s}://{piwik.url}/index.php?module=ExcludeByDDNS&action=update&token_auth={token_auth}
+```
+
+- {s} Use HTTPS if available.
+- {piwik.url}: The URL to your piwik installation.
+- {token_auth}: Your API auth token (user-menu > Platform > API).
+
 There is no need to set user, password or domain name.
 
 ## Changelog
