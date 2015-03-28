@@ -28,6 +28,10 @@ class Controller extends \Piwik\Plugin\ControllerAdmin
     {
         Piwik::checkUserHasSomeAdminAccess();
 
+        $idSite   = Common::getRequestVar('idSite', false);
+        $website  = new Site($idSite);
+        $timezone = $website->getTimezone();
+
         $view = new View('@ExcludeByDDNS/admin');
         $this->setGeneralVariablesView($view);
 
@@ -41,7 +45,7 @@ class Controller extends \Piwik\Plugin\ControllerAdmin
                 'username' => $user,
                 'ip' => $storage->getIp(),
                 'hostname' => $storage->getHostname(),
-                'lastUpdated' => $lastUpdated ? Date::factory($lastUpdated)->getLocalized(Piwik::translate('CoreHome_DateFormat') . ' %time%') : ''
+                'lastUpdated' => $lastUpdated ? Date::factory($lastUpdated, $timezone)->getLocalized(Piwik::translate('CoreHome_DateFormat') . ' %time%') : ''
             );
         }
 
