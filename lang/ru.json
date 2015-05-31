@@ -1,0 +1,7 @@
+{
+    "ExcludeByDDNS": {
+        "DDNSSettings": "Настройки DDNS",
+        "DDNSStatus": "Статус DDNS",
+        "Hostname": "Имя хоста"
+    }
+}

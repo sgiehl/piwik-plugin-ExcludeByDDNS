@@ -1,0 +1,19 @@
+{
+    "ExcludeByDDNS": {
+        "PluginDescription": "Ovaj dodatak vam omogućuje da dinamički izuzmete iz razmatranja IP adrese koristeći DDNS ažuriranje",
+        "DDNSSettings": "DDNS podešavanja",
+        "DDNSStatus": "DDNS status",
+        "DDNSSettingsDescription": "Ovde možete promeniti pdoešavanja koja se koriste za izuzeće dinamičkih IP adresa.",
+        "CurrentExcludedIp": "Vaša trenutno izuzeta IP adresa je: %s (poslednje ažuriranje: %s)",
+        "NoIpExcluded": "Trenutno nemate izuzete IP adrese.",
+        "DDNSUpdateExclusion": "Koristi DDNS ažuriranje kako bi osvežio izuzete IP adrese",
+        "DDNSUpdateExclusionDesc": "Da biste izuzeli vašu dinamičku IP adresu koristeći DDNS ažuriranje, koristite sledeći URL:",
+        "DDNSUpdateExclusionDesc2": "Ne morate da prosledite nikakve druge podatke tipa, naziv hosta, korisničko ime ili lozinku. Ostavite ova polja prazna ili upišite bilo šta ukoliko je potrebno nešto upisati.",
+        "HostnameExclusion": "Koristi automatski ažuriran naziv hosta kako bi osvežio izuzete IP adrese",
+        "HostnameExclusionDesc": "Ukoliko već koristite DDNS ažuriranje kako biste ažurirali naziv određenog hosta, možete koristiti taj naziv i za osvežavanje izuzetih IP adresa.",
+        "HostnameExclusionDesc2": "Ažuriranje će biti obavljeno preko razrešenja IP adrese hosta i izvršavaće se na svakih sat vremena",
+        "NoExclusionsSet": "Trenutno nema podešenih izuzeća.",
+        "Hostname": "Naziv hosta",
+        "HostnameError": "Nisam u mogućnosti da razrešim IP adresu za dati naziv hosta"
+    }
+}
