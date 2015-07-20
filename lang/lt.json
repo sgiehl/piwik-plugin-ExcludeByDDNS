@@ -1,0 +1,6 @@
+{
+    "ExcludeByDDNS": {
+        "DDNSSettings": "DDNS Nustatymai",
+        "DDNSStatus": "DDNS Būsena"
+    }
+}
