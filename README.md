@@ -1,5 +1,8 @@
 # Piwik Exclude IP By DDNS
 
+[![Flattr this git repo](http://api.flattr.com/button/flattr-badge-large.png)](https://flattr.com/submit/auto?user_id=sgiehl&url=https://github.com/sgiehl/piwik-plugin-ExcludeByDDNS&title=Piwik Plugin ExcludeByDDNS=&tags=github&category=software) 
+
+
 ## Description
 
 This plugin allows the Piwik users to dynamically exclude their IP address using DDNS update.
