@@ -58,6 +58,6 @@ class ExcludeByDDNS extends \Piwik\Plugin
 
     protected function getExcludedIPs()
     {
-        return Option::getLike('ExcludeByDDNS.%');
+        return Storage::getAllExcludedIps();
     }
 }

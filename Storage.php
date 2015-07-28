@@ -9,6 +9,7 @@
 namespace Piwik\Plugins\ExcludeByDDNS;
 
 use Piwik\Option;
+use Piwik\Tracker\Cache;
 
 class Storage
 {
@@ -80,23 +81,24 @@ class Storage
         );
 
         Option::set('ExcludeByDDNS.'.$this->username, serialize($data));
+        Cache::clearCacheGeneral();
     }
 
     public static function getAllUsersWithConfig()
     {
         $options = (array) Option::getLike('ExcludeByDDNS.%');
-        return array_map(function($elem){
+        return array_filter(array_map(function($elem){
             return substr($elem, 14);
-        }, array_keys($options));
+        }, array_keys($options)));
     }
 
     public static function getAllExcludedIps()
     {
         $options = (array) Option::getLike('ExcludeByDDNS.%');
-        return array_map(function($elem){
+        return array_filter(array_map(function($elem){
             $elem = unserialize($elem);
             return $elem['ip'];
-        }, array_values($options));
+        }, array_values($options)));
     }
 
 }
