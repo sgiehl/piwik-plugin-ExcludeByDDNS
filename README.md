@@ -1,7 +1,7 @@
 # Piwik Exclude IP By DDNS
 
-[![Flattr this git repo](http://api.flattr.com/button/flattr-badge-large.png)](https://flattr.com/submit/auto?user_id=sgiehl&url=https://github.com/sgiehl/piwik-plugin-ExcludeByDDNS&title=Piwik Plugin ExcludeByDDNS=&tags=github&category=software) 
-
+[![Build Status](https://travis-ci.org/sgiehl/piwik-plugin-ExcludeByDDNS.png?branch=master)](https://travis-ci.org/sgiehl/piwik-plugin-ExcludeByDDNS)
+[![Flattr this git repo](http://api.flattr.com/button/flattr-badge-large.png)](https://flattr.com/submit/auto?user_id=sgiehl&url=https://github.com/sgiehl/piwik-plugin-ExcludeByDDNS&title=Piwik Plugin ExcludeByDDNS=&tags=github&category=software)
 
 ## Description
 
@@ -45,6 +45,7 @@ There is no need to set user, password or domain name.
 
 ## Changelog
 
+- Version 0.3.0 - Various improvements and translations
 - Version 0.2.0 - Beta Release
 - Version 0.1.0 - Alpha Release
 
