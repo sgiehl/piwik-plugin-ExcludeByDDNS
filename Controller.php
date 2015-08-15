@@ -64,7 +64,6 @@ class Controller extends \Piwik\Plugin\ControllerAdmin
 
         $view = new View('@ExcludeByDDNS/index');
         $this->setBasicVariablesView($view);
-        $view->excludedHostname = $storage->getHostname();
 
         if ($nonce !== false && Nonce::verifyNonce('Piwik_ExcludeHostname'.Piwik::getCurrentUserLogin(), $nonce)) {
             if($hostname) {
@@ -91,6 +90,7 @@ class Controller extends \Piwik\Plugin\ControllerAdmin
         $website        = new Site($idSite);
         $timezone       = $website->getTimezone();
 
+        $view->excludedHostname = $storage->getHostname();
         $view->excludedIp = $storage->getIp();
         $lastUpdated = $storage->getLastUpdated();
         $view->lastUpdated = $lastUpdated ? Date::factory($lastUpdated, $timezone)->getLocalized(Piwik::translate('CoreHome_DateFormat') . ' %time%') : '';

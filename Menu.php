@@ -39,7 +39,7 @@ class Menu extends \Piwik\Plugin\Menu
         if (!method_exists($menu, 'addDiagnosticItem')) {
             // menu fallback for piwik < 1.11
             $menu->add(
-                'CoreAdminHome_MenuManage',
+                'CoreAdminHome_MenuDiagnostic',
                 'ExcludeByDDNS_DDNSStatus',
                 array('module' => 'ExcludeByDDNS', 'action' => 'admin'),
                 15

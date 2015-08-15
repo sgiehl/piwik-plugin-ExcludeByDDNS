@@ -14,7 +14,7 @@ class Tasks extends \Piwik\Plugin\Tasks
 {
     public function schedule()
     {
-        $this->hourly('updateIPs');  // method will be executed once every hour
+        $this->hourly('updateIPs', null, self::HIGH_PRIORITY);  // method will be executed once every hour
     }
 
     public function updateIPs()
