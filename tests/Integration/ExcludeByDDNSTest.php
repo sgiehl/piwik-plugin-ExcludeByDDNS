@@ -8,7 +8,6 @@
 
 namespace Piwik\Plugins\ExcluceByDDNS\tests\Integration;
 
-use Piwik\Network\IPUtils;
 use Piwik\Plugins\SitesManager\API;
 use Piwik\Plugins\ExcludeByDDNS\Storage;
 use Piwik\Plugins\ExcludeByDDNS\Tasks;
@@ -17,7 +16,7 @@ use Piwik\Tracker\Request;
 use Piwik\Tracker\VisitExcluded;
 
 /**
- * Class GoogleAuthenticatorTest
+ * Class ExcludeByDDNSTest
  *
  * @group Plugins
  * @group ExcludeByDDNS
@@ -96,7 +95,11 @@ class ExcludeByDDNSTest extends IntegrationTestCase
 
         $idsite = API::getInstance()->addSite("name", "http://piwik.net/", $ecommerce = 0, $siteSearch = 1);
 
-        $testIpIsExcluded = IPUtils::stringToBinaryIP($excludedIp);
+        if (class_exists('\Piwik\Network\IPUtils')) {
+            $testIpIsExcluded = \Piwik\Network\IPUtils::stringToBinaryIP($excludedIp);
+        } else {
+            $testIpIsExcluded = \Piwik\IP::P2N($excludedIp);
+        }
 
         $excluded = new VisitExcluded(new Request(array('idsite' => $idsite, 'rec' => 1)), $testIpIsExcluded);
         $this->assertFalse($excluded->isExcluded());

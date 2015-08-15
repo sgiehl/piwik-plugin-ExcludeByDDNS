@@ -7,9 +7,8 @@
  *
  */
 namespace Piwik\Plugins\ExcludeByDDNS;
+
 use Piwik\Common;
-use Piwik\IP;
-use Piwik\Option;
 use Piwik\Tracker\Cache;
 
 /**
@@ -25,15 +24,15 @@ class ExcludeByDDNS extends \Piwik\Plugin
     public function getListHooksRegistered()
     {
         return array(
-            'Tracker.isExcludedVisit'           => 'checkIfIpIsExcluded',
-            'Tracker.setTrackerCacheGeneral'    => 'setTrackerCacheGeneral',
+            'Tracker.isExcludedVisit' => 'checkIfIpIsExcluded',
+            'Tracker.setTrackerCacheGeneral' => 'setTrackerCacheGeneral',
         );
     }
 
     public function checkIfIpIsExcluded(&$exclude)
     {
         if ($exclude) {
-            Common::printDebug("Visit is already excluded, no need to check DoNotTrack support.");
+            Common::printDebug("Visit is already excluded, no need to check exclusion by DDNS.");
             return;
         }
 
@@ -42,6 +41,15 @@ class ExcludeByDDNS extends \Piwik\Plugin
 
         if (empty($excludedIPs)) {
             return; // Nothing to exclude
+        }
+
+        if (!class_exists('\Piwik\Network\IP')) {
+            // compatibility for Piwik < 2.9.0
+            if (in_array(\Piwik\IP::getIpFromHeader(), $excludedIPs)) {
+                Common::printDebug('Visitor IP ' . \Piwik\IP::getIpFromHeader() . ' is excluded from being tracked by DDNS');
+                $exclude = true;
+            }
+            return;
         }
 
         $ip = \Piwik\Network\IP::fromStringIP(IP::getIpFromHeader());
