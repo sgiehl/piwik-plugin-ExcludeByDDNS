@@ -52,7 +52,7 @@ class ExcludeByDDNS extends \Piwik\Plugin
             return;
         }
 
-        $ip = \Piwik\Network\IP::fromStringIP(IP::getIpFromHeader());
+        $ip = \Piwik\Network\IP::fromStringIP(\Piwik\Network\IP::getIpFromHeader());
         if ($ip->isInRanges($excludedIPs)) {
             Common::printDebug('Visitor IP ' . $ip->toString() . ' is excluded from being tracked');
             $exclude = true;
