@@ -9,6 +9,7 @@
 namespace Piwik\Plugins\ExcludeByDDNS;
 
 use Piwik\Common;
+use Piwik\IP;
 use Piwik\Tracker\Cache;
 
 /**
@@ -45,14 +46,14 @@ class ExcludeByDDNS extends \Piwik\Plugin
 
         if (!class_exists('\Piwik\Network\IP')) {
             // compatibility for Piwik < 2.9.0
-            if (in_array(\Piwik\IP::getIpFromHeader(), $excludedIPs)) {
+            if (in_array(IP::getIpFromHeader(), $excludedIPs)) {
                 Common::printDebug('Visitor IP ' . \Piwik\IP::getIpFromHeader() . ' is excluded from being tracked by DDNS');
                 $exclude = true;
             }
             return;
         }
 
-        $ip = \Piwik\Network\IP::fromStringIP(\Piwik\Network\IP::getIpFromHeader());
+        $ip = \Piwik\Network\IP::fromStringIP(IP::getIpFromHeader());
         if ($ip->isInRanges($excludedIPs)) {
             Common::printDebug('Visitor IP ' . $ip->toString() . ' is excluded from being tracked');
             $exclude = true;
