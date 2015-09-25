@@ -1,0 +1,7 @@
+{
+    "ExcludeByDDNS": {
+        "DDNSSettings": "DDNS-inställningar",
+        "DDNSStatus": "DDNS-status",
+        "Hostname": "Värdnamn"
+    }
+}
