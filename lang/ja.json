@@ -12,6 +12,7 @@
         "HostnameExclusion": "自動アップデートされたホスト名を使用して、除外 IP を更新してください。",
         "HostnameExclusionDesc": "すでに DDNS アップデートを使用してホスト名を更新している場合は、このホスト名を使って除外 IP を更新することができます。",
         "HostnameExclusionDesc2": "ホストネームのIPを解決する毎時のタスクとしてアップデートされます",
+        "NoExclusionsSet": "除外設定がありません",
         "Hostname": "ホスト名",
         "HostnameError": "指定したホスト名の IP アドレスを解決できません。"
     }
