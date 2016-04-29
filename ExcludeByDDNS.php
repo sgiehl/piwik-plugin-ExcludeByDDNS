@@ -30,6 +30,11 @@ class ExcludeByDDNS extends \Piwik\Plugin
         );
     }
 
+    public function isTrackerPlugin()
+    {
+        return true;
+    }
+
     public function checkIfIpIsExcluded(&$exclude)
     {
         if ($exclude) {
