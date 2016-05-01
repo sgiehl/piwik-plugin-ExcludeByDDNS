@@ -1,0 +1,6 @@
+{
+    "ExcludeByDDNS": {
+        "DDNSSettings": "DDNS-asetukset",
+        "DDNSStatus": "DDNS:n tila"
+    }
+}

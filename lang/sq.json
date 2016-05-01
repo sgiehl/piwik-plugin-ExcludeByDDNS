@@ -1,0 +1,6 @@
+{
+    "ExcludeByDDNS": {
+        "PluginDescription": "Kjo shtojcë ju lejon të përjashtoni në mënyrë dinamike një IP duke përdorur përditësim DDNS",
+        "Hostname": "Strehëemër"
+    }
+}
