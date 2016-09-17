@@ -45,7 +45,7 @@ class Controller extends \Piwik\Plugin\ControllerAdmin
                 'username' => $user,
                 'ip' => $storage->getIp(),
                 'hostname' => $storage->getHostname(),
-                'lastUpdated' => $lastUpdated ? Date::factory($lastUpdated, $timezone)->getLocalized(Piwik::translate('CoreHome_DateFormat') . ' %time%') : ''
+                'lastUpdated' => $lastUpdated ? Date::factory($lastUpdated, $timezone)->getLocalized(Date::DATETIME_FORMAT_SHORT) : ''
             );
         }
 
@@ -93,7 +93,7 @@ class Controller extends \Piwik\Plugin\ControllerAdmin
         $view->excludedHostname = $storage->getHostname();
         $view->excludedIp = $storage->getIp();
         $lastUpdated = $storage->getLastUpdated();
-        $view->lastUpdated = $lastUpdated ? Date::factory($lastUpdated, $timezone)->getLocalized(Piwik::translate('CoreHome_DateFormat') . ' %time%') : '';
+        $view->lastUpdated = $lastUpdated ? Date::factory($lastUpdated, $timezone)->getLocalized(Date::DATETIME_FORMAT_SHORT) : '';
         $view->nonce = Nonce::getNonce('Piwik_ExcludeHostname'.Piwik::getCurrentUserLogin(), 3600);
 
         return $view->render();

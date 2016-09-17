@@ -1,37 +1,40 @@
 {% extends ['user.twig', 'admin.twig'] %}
 
+{% set title %}{{ 'ExcludeByDDNS_DDNSSettings'|translate }}{% endset %}
+
 {% block content %}
-    <h2>{{ 'ExcludeByDDNS_DDNSSettings'|translate }}</h2>
+    <div piwik-content-block content-title="{{ title|e('html_attr') }}">
 
-    <p>{{ 'ExcludeByDDNS_DDNSSettingsDescription'|translate }}</p>
+        <p>{{ 'ExcludeByDDNS_DDNSSettingsDescription'|translate }}</p>
 
-    {% if excludedIp %}
-        {{ 'ExcludeByDDNS_CurrentExcludedIp'|translate(excludedIp, lastUpdated) }}
-    {% else %}
-        {{ 'ExcludeByDDNS_NoIpExcluded'|translate }}
-    {% endif %}
+        {% if excludedIp %}
+            {{ 'ExcludeByDDNS_CurrentExcludedIp'|translate(excludedIp, lastUpdated) }}
+        {% else %}
+            {{ 'ExcludeByDDNS_NoIpExcluded'|translate }}
+        {% endif %}
 
-    <h3>{{ 'ExcludeByDDNS_DDNSUpdateExclusion'|translate }}</h3>
+        <h3>{{ 'ExcludeByDDNS_DDNSUpdateExclusion'|translate }}</h3>
 
-    <p>{{ 'ExcludeByDDNS_DDNSUpdateExclusionDesc'|translate }}</p>
+        <p>{{ 'ExcludeByDDNS_DDNSUpdateExclusionDesc'|translate }}</p>
 
-    <pre>{{ updateUrl }}</pre>
+        <pre>{{ updateUrl }}</pre>
 
-    <p>{{ 'ExcludeByDDNS_DDNSUpdateExclusionDesc2'|translate }}</p>
+        <p>{{ 'ExcludeByDDNS_DDNSUpdateExclusionDesc2'|translate }}</p>
 
 
-    <h3>{{ 'ExcludeByDDNS_HostnameExclusion'|translate }}</h3>
+        <h3>{{ 'ExcludeByDDNS_HostnameExclusion'|translate }}</h3>
 
-    <p>{{ 'ExcludeByDDNS_HostnameExclusionDesc'|translate }}</p>
+        <p>{{ 'ExcludeByDDNS_HostnameExclusionDesc'|translate }}</p>
 
-    {% if hostnameError is defined %}
-    <p class="error">{{ 'ExcludeByDDNS_HostnameError'|translate }}</p>
-    {% endif %}
-    <form method="post" action="{{ linkTo([]) }}">
-        <input type="hidden" name="nonce" value="{{ nonce }}" />
-        <input type="text" name="excludedHostname" id="excludedHostname" value="{{ excludedHostname }}" /> <input type="submit" value="{{ 'General_Save'|translate }}" />
-    </form>
+        {% if hostnameError is defined %}
+            <p class="error">{{ 'ExcludeByDDNS_HostnameError'|translate }}</p>
+        {% endif %}
+        <form method="post" action="{{ linkTo([]) }}">
+            <input type="hidden" name="nonce" value="{{ nonce }}"/>
+            <input type="text" name="excludedHostname" id="excludedHostname" value="{{ excludedHostname }}"/> <input
+                    type="submit" value="{{ 'General_Save'|translate }}"/>
+        </form>
 
-    <p>{{ 'ExcludeByDDNS_HostnameExclusionDesc2'|translate }}</p>
-
+        <p>{{ 'ExcludeByDDNS_HostnameExclusionDesc2'|translate }}</p>
+    </div>
 {% endblock %}

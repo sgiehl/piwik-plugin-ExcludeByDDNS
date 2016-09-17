@@ -9,7 +9,7 @@ This plugin allows the Piwik users to dynamically exclude their IP address using
 
 ### Requirements
 
-[Piwik](https://github.com/piwik/piwik) 2.4.0 or higher is required.
+[Piwik](https://github.com/piwik/piwik) 3.0.0 or higher is required.
 
 ### Features
 
@@ -45,6 +45,7 @@ There is no need to set user, password or domain name.
 
 ## Changelog
 
+- Version 3.0.0 - Compatibility for Piwik > 3.0.0
 - Version 0.4.0 - Compatibility for Piwik > 2.4.0
 - Version 0.3.0 - Various improvements and translations
 - Version 0.2.0 - Beta Release
