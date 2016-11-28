@@ -1,35 +1,37 @@
 {% extends 'admin.twig' %}
 
+{% set title %}{{ 'ExcludeByDDNS_DDNSStatus'|translate }}{% endset %}
+
 {% block content %}
-    <h2>{{ 'ExcludeByDDNS_DDNSStatus'|translate }}</h2>
-
-    <table class="tableForm dataTable entityTable">
-        <thead>
-        <tr>
-            <th>{{ 'General_Username'|translate }}</th>
-            <th>{{ 'General_IP'|translate }}</th>
-            <th>{{ 'ExcludeByDDNS_Hostname'|translate }}</th>
-            <th>{{ 'CorePluginsAdmin_LastUpdated'|translate }}</th>
-        </tr>
-        </thead>
-        <tbody>
-        {% if exclusions|length %}
-            {% for exclusion in exclusions %}
-                <tr>
-                    <td>{{ exclusion.username}}</td>
-                    <td>{{ exclusion.ip}}</td>
-                    <td>{{ exclusion.hostname}}</td>
-                    <td>{{ exclusion.lastUpdated}}</td>
-                </tr>
-            {% endfor %}
-        {% else %}
+    <div piwik-content-block content-title="{{ title|e('html_attr') }}">
+        <table class="tableForm dataTable entityTable">
+            <thead>
             <tr>
-                <td colspan="4"><br/>{{ 'ExcludeByDDNS_NoExclusionsSet'|translate }}<br/><br/></td>
+                <th>{{ 'General_Username'|translate }}</th>
+                <th>{{ 'General_IP'|translate }}</th>
+                <th>{{ 'ExcludeByDDNS_Hostname'|translate }}</th>
+                <th>{{ 'CorePluginsAdmin_LastUpdated'|translate }}</th>
             </tr>
-        {% endif %}
-        </tbody>
-    </table>
+            </thead>
+            <tbody>
+            {% if exclusions|length %}
+                {% for exclusion in exclusions %}
+                    <tr>
+                        <td>{{ exclusion.username }}</td>
+                        <td>{{ exclusion.ip }}</td>
+                        <td>{{ exclusion.hostname }}</td>
+                        <td>{{ exclusion.lastUpdated }}</td>
+                    </tr>
+                {% endfor %}
+            {% else %}
+                <tr>
+                    <td colspan="4"><br/>{{ 'ExcludeByDDNS_NoExclusionsSet'|translate }}<br/><br/></td>
+                </tr>
+            {% endif %}
+            </tbody>
+        </table>
 
-    <br /><br />
-    <a href="{{ linkTo({'module': 'ExcludeByDDNS', 'action': 'index'}) }}">{{ 'ExcludeByDDNS_DDNSSettings'|translate }}</a>
+        <br/><br/>
+        <a href="{{ linkTo({'module': 'ExcludeByDDNS', 'action': 'index'}) }}">{{ 'ExcludeByDDNS_DDNSSettings'|translate }}</a>
+    </div>
 {% endblock %}
