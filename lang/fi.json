@@ -1,6 +1,7 @@
 {
     "ExcludeByDDNS": {
         "DDNSSettings": "DDNS-asetukset",
-        "DDNSStatus": "DDNS:n tila"
+        "DDNSStatus": "DDNS:n tila",
+        "Hostname": "Isäntänimi"
     }
 }

@@ -1,7 +1,7 @@
 {
     "ExcludeByDDNS": {
         "PluginDescription": "Deze plugin laat je toe om dynamisch een IP uit te sluiten door gebruik te maken van een DDNS update",
-        "DDNSSettings": "DDNS instellingen",
+        "DDNSSettings": "DDNS-instellingen",
         "DDNSStatus": "DDNS status",
         "DDNSSettingsDescription": "Hier kun je de instellingen, om je dynamisch IP uit te sluiten, wijzigen.",
         "CurrentExcludedIp": "Je huidig uitgesloten IP is: %s (laatste update: %s)",

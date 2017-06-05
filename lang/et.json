@@ -1,0 +1,7 @@
+{
+    "ExcludeByDDNS": {
+        "DDNSSettings": "DDNS seaded",
+        "DDNSStatus": "DDNS staatus",
+        "Hostname": "Hostinimi"
+    }
+}
