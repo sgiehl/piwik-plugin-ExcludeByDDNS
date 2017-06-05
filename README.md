@@ -1,7 +1,7 @@
 # Piwik Exclude IP By DDNS
 
 [![Build Status](https://travis-ci.org/sgiehl/piwik-plugin-ExcludeByDDNS.png?branch=master)](https://travis-ci.org/sgiehl/piwik-plugin-ExcludeByDDNS)
-[![Flattr this git repo](http://api.flattr.com/button/flattr-badge-large.png)](https://flattr.com/submit/auto?user_id=sgiehl&url=https://github.com/sgiehl/piwik-plugin-ExcludeByDDNS&title=Piwik Plugin ExcludeByDDNS=&tags=github&category=software)
+[![Flattr this git repo](http://api.flattr.com/button/flattr-badge-large.png)](https://flattr.com/submit/auto?user_id=sgiehl&url=https://github.com/sgiehl/piwik-plugin-ExcludeByDDNS&title=Piwik%20Plugin%20ExcludeByDDNS=&tags=github&category=software)
 
 ## Description
 
