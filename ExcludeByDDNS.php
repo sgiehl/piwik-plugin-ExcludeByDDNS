@@ -20,9 +20,9 @@ class ExcludeByDDNS extends \Piwik\Plugin
     const __CACHE_ID__ = 'ExcludeByDDNS';
 
     /**
-     * @see Piwik\Plugin::getListHooksRegistered
+     * @see Piwik\Plugin::registerEvents
      */
-    public function getListHooksRegistered()
+    public function registerEvents()
     {
         return array(
             'Tracker.isExcludedVisit' => 'checkIfIpIsExcluded',
