@@ -1,5 +1,19 @@
 {
     "ExcludeByDDNS": {
-        "DDNSSettings": "Definições DDNS"
+        "PluginDescription": "Esta extensão permite-lhe excluir um IP de forma dinâmica utilizando uma atualização DDNS.",
+        "DDNSSettings": "Definições DDNS",
+        "DDNSStatus": "Estado do DDNS",
+        "DDNSSettingsDescription": "Aqui pode alterar as definições utilizadas para excluir o seu endereço de IP dinâmico.",
+        "CurrentExcludedIp": "O seu endereço de IP atualmente excluído é: %s (última atualização: %s)",
+        "NoIpExcluded": "Atualmente não tem nenhum conjunto de exclusão de IPs definido.",
+        "DDNSUpdateExclusion": "Utilizar uma atualização DDNS para atualizar o IP excluído",
+        "DDNSUpdateExclusionDesc": "Para excluir o seu endereço de IP dinâmico utilizando uma atualização DDNS, utilize o seguinte endereço:",
+        "DDNSUpdateExclusionDesc2": "Não precisa de passar quaisquer outros dados tais como nome do servidor, nome de utilizador ou palavra-passe. Deixe em branco ou escreva qualquer coisa caso o valor seja necessário.",
+        "HostnameExclusion": "Utilize um nome de servidor atualizado automaticamente para atualizar o IP excluído",
+        "HostnameExclusionDesc": "Se já estiver a utilizar uma atualização DDNS para atualizar um nome de servidor específico, pode utilizar este nome de servidor para atualizar o IP excluído.",
+        "HostnameExclusionDesc2": "A atualização será feita como uma tarefa horária obtendo o IP do nome do servidor",
+        "NoExclusionsSet": "Atualmente não existem exclusões configuradas.",
+        "Hostname": "Nome do servidor",
+        "HostnameError": "Não foi possível obter o IP para o nome de servidor fornecido"
     }
 }

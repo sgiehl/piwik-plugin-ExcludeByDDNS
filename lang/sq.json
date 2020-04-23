@@ -14,6 +14,6 @@
         "HostnameExclusionDesc2": "Akti i përditësimit do të kryhet një herë në orë, duke bërë realizuar gjetjen e IP-së së strehëemrit",
         "NoExclusionsSet": "Hëpërhë s’ka përjashtime të formësuara.",
         "Hostname": "Strehëemër",
-        "HostnameError": "I pazoti të gjejë IP-në për strehëemrin e dhënë"
+        "HostnameError": "S’arrihet të gjendet IP për strehëemrin e dhënë"
     }
 }
