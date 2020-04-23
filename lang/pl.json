@@ -1,0 +1,19 @@
+{
+    "ExcludeByDDNS": {
+        "PluginDescription": "Ta wtyczka pozwala Ci dynamicznie wykluczyć adres IP przy pomocy aktualizowanego DDNS",
+        "DDNSSettings": "Ustawienia DDNS",
+        "DDNSStatus": "Status DDNS",
+        "DDNSSettingsDescription": "Tu zmienisz ustawienia wykorzystywane do wykluczania dynamicznego adresu IP.",
+        "CurrentExcludedIp": "Twój obecnie wykluczony adres IP to: %s (ostatnia aktualizacja %s)",
+        "NoIpExcluded": "Obecnie żaden adres IP nie jest wykluczany.",
+        "DDNSUpdateExclusion": "Użyj aktualizacji DDNS aby odświeżyć wykluczany adres IP",
+        "DDNSUpdateExclusionDesc": "W celu wykluczenia Twojego dynamicznego adresu IP korzystając z aktualizacji DDNS, użyj następującego adresu URL:",
+        "DDNSUpdateExclusionDesc2": "Nie trzeba podawać żadnych innych danych takich jak nazwa hosta, nazwa użytkownika czy hasła. Pozostaw je puste lub wpisz cokolwiek jeśli wartość jest wymagana.",
+        "HostnameExclusion": "Użyj automatycznie aktualizowanej nazwy hosta w celu odświeżenia wykluczonego adresu IP",
+        "HostnameExclusionDesc": "Jeżeli już korzystasz z aktualizacji DDNS, aby aktualizować konkretną nazwę hosta, możesz jej użyć do odświeżania wykluczonego adresu IP.",
+        "HostnameExclusionDesc2": "Aktualizacja będzie wykonywana cyklicznie co godzinę rozwiązując nazwę hosta do adresu IP",
+        "NoExclusionsSet": "Nie skonfigurowano żadnych wykluczeń.",
+        "Hostname": "Nazwa hosta",
+        "HostnameError": "Nie udało się rozwiązać adresu IP dla podanej nazwy hosta"
+    }
+}

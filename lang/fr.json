@@ -4,7 +4,7 @@
         "DDNSSettings": "Paramètres DDNS",
         "DDNSStatus": "Statut DDNS",
         "DDNSSettingsDescription": "Vous pouvez modifier les paramètres utlisés pour exclure votre adresse IP dynamique ici.",
-        "CurrentExcludedIp": "L'adresse IP exclue en ce moment est: %s (dernière mise à jour: %s)",
+        "CurrentExcludedIp": "L'adresse IP exclue en ce moment est: %s (dernière mise à jour : %s)",
         "NoIpExcluded": "Vous n'avez actuellement aucune IP exclue paramétrée.",
         "DDNSUpdateExclusion": "Utilisez la mise à jour DDNS pour rafraîchir l'IP exclue",
         "DDNSUpdateExclusionDesc": "Afin d'exclure votre adresse IP dynamique en utilisant les mises à jour DDNS, utilisez l'url suivante :",

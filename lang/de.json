@@ -10,8 +10,8 @@
         "DDNSUpdateExclusionDesc": "Um eine IP-Adresse mit Hilfe einer DDNS-Aktualisierung auszuschließen, verwenden Sie folgende URL:",
         "DDNSUpdateExclusionDesc2": "Sie müssen keine weiteren Daten wie Hostname, Benutzer oder Passwort übergeben. Lassen Sie diese leer oder tragen Sie beliebige Werte ein, sollte dies erforderlich sein.",
         "HostnameExclusion": "Einen über DDNS aktualisierten Hostnamen zum Ausschluss verwenden.",
-        "HostnameExclusionDesc": "Sollten Sie DDNS bereits zur Aktualisierung eines Hostnamen verwenden, können Sie diesen verwenden um die IP-Adresse auszuschließen.",
-        "HostnameExclusionDesc2": "Die Aktualisierug wird stündlich durch Auflösung des Hostnamen erfolgen.",
+        "HostnameExclusionDesc": "Sollten Sie DDNS bereits zur Aktualisierung eines Hostnamen verwenden, können Sie diesen verwenden, um die IP-Adresse auszuschließen.",
+        "HostnameExclusionDesc2": "Die Aktualisierung wird stündlich durch Auflösung des Hostnamen erfolgen.",
         "NoExclusionsSet": "Aktuell sind keine Ausschlüsse konfiguriert.",
         "Hostname": "Hostname",
         "HostnameError": "Die IP-Adresse für den angegebenen Hostnamen konnte nicht aufgelöst werden."

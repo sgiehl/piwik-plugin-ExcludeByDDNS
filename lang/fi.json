@@ -1,7 +1,11 @@
 {
     "ExcludeByDDNS": {
+        "PluginDescription": "Tämä lisäosa sallii IP-osoitteiden sulkemisen pois raporteista dynaamisesti DDNS-päivityksillä",
         "DDNSSettings": "DDNS-asetukset",
         "DDNSStatus": "DDNS:n tila",
-        "Hostname": "Isäntänimi"
+        "NoIpExcluded": "Mitään IP-osoitteita ei ole suljettu pois.",
+        "DDNSUpdateExclusion": "Käytä DDNS-päivitystä kiellettyjen IP:iden päivittämiseen",
+        "Hostname": "Isäntänimi",
+        "HostnameError": "Nimen selvittäminen IP-osoitteeksi epäonnistui"
     }
 }

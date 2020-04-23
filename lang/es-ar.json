@@ -1,0 +1,19 @@
+{
+    "ExcludeByDDNS": {
+        "PluginDescription": "Este plugin te permite excluir dinámicamente una dirección IP usando actualizaciones de DDNS",
+        "DDNSSettings": "Configuración de DDNS",
+        "DDNSStatus": "Estado de DDNS",
+        "DDNSSettingsDescription": "Acá podés cambiar la configuración usada para excluir tu dirección IP dinámica.",
+        "CurrentExcludedIp": "Tu dirección IP actualmente excluida es: %s (última actualización %s)",
+        "NoIpExcluded": "Actualmente no tenés establecida una dirección IP excluida.",
+        "DDNSUpdateExclusion": "Usá la actualización de DDNS para refrescar la dirección IP excluida",
+        "DDNSUpdateExclusionDesc": "Para excluir tu dirección IP dinámica usando una actualización DDNS, usá la siguiente dirección web:",
+        "DDNSUpdateExclusionDesc2": "No necesitar pasar ningún otro dato como nombre del servidor, nombre de usuario o contraseña. Dejá esos campos vacíos o ingresá algo si el valor es necesario.",
+        "HostnameExclusion": "Usá el nombre del servidor actualizado automáticamente para refrescar la dirección IP excluida",
+        "HostnameExclusionDesc": "Si ya estás usando una actualización DDNS para actualizar un nombre de servidor específico, podés usar este nombre de servidor para refrescar la dirección IP excluida.",
+        "HostnameExclusionDesc2": "La actualización será finalizada como una tarea por hora, resolviendo la dirección IP del nombre del servidor",
+        "NoExclusionsSet": "Actualmente no hay exclusiones configuradas.",
+        "Hostname": "Nombre del servidor",
+        "HostnameError": "No se pudo resolver la dirección IP del nombre del servidor dado"
+    }
+}

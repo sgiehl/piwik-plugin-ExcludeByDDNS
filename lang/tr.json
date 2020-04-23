@@ -1,0 +1,19 @@
+{
+    "ExcludeByDDNS": {
+        "PluginDescription": "Bu uygulama eki DDNS güncellemesini kullanarak bir IP adresinin devingen olarak katılmamasını sağlar",
+        "DDNSSettings": "DDNS ayarları",
+        "DDNSStatus": "DDNS durumu",
+        "DDNSSettingsDescription": "Devingen IP adreslerinizin katılmaması için kullanılacak ayarlar bu bölümden düzenlenebilir.",
+        "CurrentExcludedIp": "Geçerli katılmayan IP adresiniz: %s (son güncelleme: %s)",
+        "NoIpExcluded": "Katılmamak üzere ayarlanmış bir IP adresi yok.",
+        "DDNSUpdateExclusion": "Katılmayan IP adresini yenilemek için DDNS güncellemesi kullanılsın",
+        "DDNSUpdateExclusionDesc": "DDNS güncellemesi kullanılarak devingen IP adresinizin katılmaması için şu adresi kullanın:",
+        "DDNSUpdateExclusionDesc2": "Sunucu adı, kullanıcı adı ya da parola gibi başka bir bilgi vermeniz gerekmez. Bunları boş bırakabilir ya da gerekli bir bilgi varsa yazabilirsiniz.",
+        "HostnameExclusion": "Katılmayacak IP adresini yenilemek için otomatik güncellenen sunucu adı kullanılsın",
+        "HostnameExclusionDesc": "Belirli bir sunucu adını güncellemek için kullandığınız bir DDNS güncellemesi varsa, bu sunucu adını katılmayacak IP adresini yenilemek için kullanabilirsiniz.",
+        "HostnameExclusionDesc2": "Güncelleme işlemi saatte bir kere sunucunun IP adresi çözümlenerek yapılır",
+        "NoExclusionsSet": "Katılmayacak IP adresi yapılandırılmamış.",
+        "Hostname": "Sunucu Adı",
+        "HostnameError": "Belirtilen sunucu adının IP adresi çözümlenemedi"
+    }
+}

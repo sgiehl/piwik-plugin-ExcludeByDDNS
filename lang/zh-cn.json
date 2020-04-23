@@ -1,0 +1,19 @@
+{
+    "ExcludeByDDNS": {
+        "PluginDescription": "该插件允许您使用DDNS更新动态排除IP",
+        "DDNSSettings": "DDNS设定",
+        "DDNSStatus": "DDNS状态",
+        "DDNSSettingsDescription": "在这里，您可以更改用于排除动态IP地址的设置。",
+        "CurrentExcludedIp": "您当前排除的IP是：%s（最新更新：%s）",
+        "NoIpExcluded": "您目前没有排除的IP集。",
+        "DDNSUpdateExclusion": "使用DDNS更新来刷新排除的IP",
+        "DDNSUpdateExclusionDesc": "为了使用DDNS更新排除动态IP地址，请使用以下网址：",
+        "DDNSUpdateExclusionDesc2": "您不需要传递任何其他数据，例如主机名，用户名或密码。 将其保留为空，或在需要该值时键入任何内容。",
+        "HostnameExclusion": "使用自动更新的主机名刷新排除的IP",
+        "HostnameExclusionDesc": "如果您已经在使用DDNS更新来更新特定的主机名，则可以使用该主机名刷新排除的IP。",
+        "HostnameExclusionDesc2": "更新将作为一个每小时的任务来完成，以解析主机名的IP",
+        "NoExclusionsSet": "当前没有配置排除对象。",
+        "Hostname": "主机名",
+        "HostnameError": "无法解析给定主机名的IP"
+    }
+}
