@@ -25,16 +25,17 @@
         <h3>{{ 'ExcludeByDDNS_HostnameExclusion'|translate }}</h3>
 
         <p>{{ 'ExcludeByDDNS_HostnameExclusionDesc'|translate }}</p>
+        <p>{{ 'ExcludeByDDNS_HostnameExclusionDesc2'|translate }}</p>
 
         {% if hostnameError is defined %}
             <p class="error">{{ 'ExcludeByDDNS_HostnameError'|translate }}</p>
         {% endif %}
         <form method="post" action="{{ linkTo([]) }}">
             <input type="hidden" name="nonce" value="{{ nonce }}"/>
-            <input type="text" name="excludedHostname" id="excludedHostname" value="{{ excludedHostname }}"/> <input
-                    type="submit" value="{{ 'General_Save'|translate }}"/>
+            <div piwik-field uicontrol="text" name="excludedHostname" id="excludedHostname" value="{{ excludedHostname }}"
+                 data-title="{{ 'ExcludeByDDNS_Hostname'|translate }}"></div>
+            <input type="submit" value="{{ 'General_Save'|translate }}" class="btn" />
         </form>
 
-        <p>{{ 'ExcludeByDDNS_HostnameExclusionDesc2'|translate }}</p>
     </div>
 {% endblock %}

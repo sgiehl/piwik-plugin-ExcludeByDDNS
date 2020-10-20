@@ -13,7 +13,6 @@ use Piwik\Date;
 use Piwik\IP;
 use Piwik\Nonce;
 use Piwik\Piwik;
-use Piwik\Site;
 use Piwik\Tracker\Cache;
 use Piwik\Url;
 use Piwik\View;
@@ -26,10 +25,6 @@ class Controller extends \Piwik\Plugin\ControllerAdmin
     public function admin()
     {
         Piwik::checkUserHasSomeAdminAccess();
-
-        $idSite   = Common::getRequestVar('idSite', false);
-        $website  = new Site($idSite);
-        $timezone = $website->getTimezone();
 
         $view = new View('@ExcludeByDDNS/admin');
         $this->setGeneralVariablesView($view);
@@ -44,7 +39,7 @@ class Controller extends \Piwik\Plugin\ControllerAdmin
                 'username' => $user,
                 'ip' => $storage->getIp(),
                 'hostname' => $storage->getHostname(),
-                'lastUpdated' => $lastUpdated ? Date::factory($lastUpdated, $timezone)->getLocalized(Date::DATETIME_FORMAT_SHORT) : ''
+                'lastUpdated' => $lastUpdated ? Date::factory($lastUpdated)->getLocalized(Date::DATETIME_FORMAT_SHORT) : ''
             );
         }
 
@@ -55,7 +50,6 @@ class Controller extends \Piwik\Plugin\ControllerAdmin
     {
         Piwik::checkUserHasSomeViewAccess();
 
-        $idSite   = Common::getRequestVar('idSite', false);
         $nonce    = Common::getRequestVar('nonce', false);
         $hostname = Common::getRequestVar('excludedHostname', false);
 
@@ -83,16 +77,13 @@ class Controller extends \Piwik\Plugin\ControllerAdmin
         $view->updateUrl = Url::getCurrentUrlWithoutQueryString(false) .'?'. Url::getQueryStringFromParameters(array(
                 'module' => 'ExcludeByDDNS',
                 'action' => 'update',
-                'token_auth' => Piwik::getCurrentUserTokenAuth()
+                'token_auth' => '{app_specific_token}'
             ));
-
-        $website        = new Site($idSite);
-        $timezone       = $website->getTimezone();
 
         $view->excludedHostname = $storage->getHostname();
         $view->excludedIp = $storage->getIp();
         $lastUpdated = $storage->getLastUpdated();
-        $view->lastUpdated = $lastUpdated ? Date::factory($lastUpdated, $timezone)->getLocalized(Date::DATETIME_FORMAT_SHORT) : '';
+        $view->lastUpdated = $lastUpdated ? Date::factory($lastUpdated)->getLocalized(Date::DATETIME_FORMAT_SHORT) : '';
         $view->nonce = Nonce::getNonce('Piwik_ExcludeHostname'.Piwik::getCurrentUserLogin(), 3600);
 
         return $view->render();

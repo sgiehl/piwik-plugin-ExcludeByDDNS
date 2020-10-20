@@ -49,15 +49,6 @@ class ExcludeByDDNS extends \Piwik\Plugin
             return; // Nothing to exclude
         }
 
-        if (!class_exists('\Piwik\Network\IP')) {
-            // compatibility for Piwik < 2.9.0
-            if (in_array(IP::getIpFromHeader(), $excludedIPs)) {
-                Common::printDebug('Visitor IP ' . \Piwik\IP::getIpFromHeader() . ' is excluded from being tracked by DDNS');
-                $exclude = true;
-            }
-            return;
-        }
-
         $ip = \Matomo\Network\IP::fromStringIP(IP::getIpFromHeader());
         if ($ip->isInRanges($excludedIPs)) {
             Common::printDebug('Visitor IP ' . $ip->toString() . ' is excluded from being tracked');
