@@ -1,19 +1,19 @@
-# Piwik Exclude IP By DDNS
+# Matomo Exclude IP By DDNS
 
-[![Build Status](https://travis-ci.org/sgiehl/piwik-plugin-ExcludeByDDNS.png?branch=master)](https://travis-ci.org/sgiehl/piwik-plugin-ExcludeByDDNS)
+[![Build Status](https://travis-ci.org/sgiehl/piwik-plugin-ExcludeByDDNS.png?branch=4.x-dev)](https://travis-ci.org/sgiehl/piwik-plugin-ExcludeByDDNS)
 [![Flattr this git repo](http://api.flattr.com/button/flattr-badge-large.png)](https://flattr.com/submit/auto?user_id=sgiehl&url=https://github.com/sgiehl/piwik-plugin-ExcludeByDDNS&title=Piwik%20Plugin%20ExcludeByDDNS=&tags=github&category=software)
 
 ## Description
 
-This plugin allows the Piwik users to dynamically exclude their IP address using DDNS update.
+This plugin allows the Matomo users to dynamically exclude their IP address using DDNS update.
 
 ### Requirements
 
-[Piwik](https://github.com/piwik/piwik) 3.0.0 or higher is required.
+[Matomo](https://github.com/matomo-org/matomo) 3.0.0 or higher is required.
 
 ### Features
 
-- Exclude one IP for each Piwik user 
+- Exclude one IP for each Matomo user 
 - Exclude and IP using an already updated hostname
 
 ## FAQ
@@ -30,21 +30,22 @@ So, the ___DDNS Hostname___ can be an alternative. Use a DDNS Service that is co
 __What data do I need to set for DDNS Update__
 
 You need to set a custom URL to be triggered for an update.
-Your personal update-URL is shown in your piwik installation (user-menu > Personal > DDNS Settings).
+Your personal update-URL is shown in your Matomo installation (user-menu > Personal > DDNS Settings).
 
 The URL has the following scheme:
 ```
-http{s}://{piwik.url}/index.php?module=ExcludeByDDNS&action=update&token_auth={token_auth}
+http{s}://{matomo.url}/index.php?module=ExcludeByDDNS&action=update&token_auth={token_auth}
 ```
 
 - {s} Use HTTPS if available.
-- {piwik.url}: The URL to your piwik installation.
+- {matomo.url}: The URL to your Matomo installation.
 - {token_auth}: Your API auth token (user-menu > Platform > API).
 
 There is no need to set user, password or domain name.
 
 ## Changelog
 
+- Version 4.0.0 - Compatibility for Matomo > 4.0.0
 - Version 3.0.0 - Compatibility for Piwik > 3.0.0
 - Version 0.4.0 - Compatibility for Piwik > 2.4.0
 - Version 0.3.0 - Various improvements and translations
@@ -53,7 +54,7 @@ There is no need to set user, password or domain name.
 
 ## Support
 
-Please direct any feedback to [stefan@piwik.org](mailto:stefan@piwik.org)
+Please direct any feedback to [stefan@matomo.org](mailto:stefan@matomo.org)
 
 ## Contribute
 

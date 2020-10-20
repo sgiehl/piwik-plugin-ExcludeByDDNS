@@ -1,8 +1,8 @@
 <?php
 /**
- * Piwik - free/libre analytics platform
+ * Matomo - free/libre analytics platform
  *
- * @link http://piwik.org
+ * @link https://matomo.org
  * @license http://www.gnu.org/licenses/gpl-3.0.html GPL v3 or later
  *
  */
@@ -20,14 +20,14 @@ class ExcludeByDDNS extends \Piwik\Plugin
     const __CACHE_ID__ = 'ExcludeByDDNS';
 
     /**
-     * @see Piwik\Plugin::registerEvents
+     * @see \Piwik\Plugin::registerEvents
      */
     public function registerEvents()
     {
-        return array(
+        return [
             'Tracker.isExcludedVisit' => 'checkIfIpIsExcluded',
             'Tracker.setTrackerCacheGeneral' => 'setTrackerCacheGeneral',
-        );
+        ];
     }
 
     public function isTrackerPlugin()
@@ -58,7 +58,7 @@ class ExcludeByDDNS extends \Piwik\Plugin
             return;
         }
 
-        $ip = \Piwik\Network\IP::fromStringIP(IP::getIpFromHeader());
+        $ip = \Matomo\Network\IP::fromStringIP(IP::getIpFromHeader());
         if ($ip->isInRanges($excludedIPs)) {
             Common::printDebug('Visitor IP ' . $ip->toString() . ' is excluded from being tracked');
             $exclude = true;

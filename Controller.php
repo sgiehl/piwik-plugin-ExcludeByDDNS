@@ -1,8 +1,8 @@
 <?php
 /**
- * Piwik - free/libre analytics platform
+ * Matomo - free/libre analytics platform
  *
- * @link http://piwik.org
+ * @link https://matomo.org
  * @license http://www.gnu.org/licenses/gpl-3.0.html GPL v3 or later
  *
  */
@@ -12,7 +12,6 @@ use Piwik\Common;
 use Piwik\Date;
 use Piwik\IP;
 use Piwik\Nonce;
-use Piwik\Option;
 use Piwik\Piwik;
 use Piwik\Site;
 use Piwik\Tracker\Cache;

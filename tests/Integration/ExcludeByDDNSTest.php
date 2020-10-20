@@ -1,8 +1,8 @@
 <?php
 /**
- * Piwik - free/libre analytics platform
+ * Matomo - free/libre analytics platform
  *
- * @link http://piwik.org
+ * @link https://matomo.org
  * @license http://www.gnu.org/licenses/gpl-3.0.html GPL v3 or later
  */
 
@@ -23,7 +23,7 @@ use Piwik\Tracker\VisitExcluded;
  */
 class ExcludeByDDNSTest extends IntegrationTestCase
 {
-    public function setUp()
+    public function setUp(): void
     {
         parent::setUp();
 
@@ -95,20 +95,14 @@ class ExcludeByDDNSTest extends IntegrationTestCase
 
         $idsite = API::getInstance()->addSite("name", "http://piwik.net/", $ecommerce = 0, $siteSearch = 1);
 
-        if (class_exists('\Piwik\Network\IPUtils')) {
-            $testIpIsExcluded = \Piwik\Network\IPUtils::stringToBinaryIP($excludedIp);
-        } else {
-            $testIpIsExcluded = \Piwik\IP::P2N($excludedIp);
-        }
-
-        $excluded = new VisitExcluded(new Request(array('idsite' => $idsite, 'rec' => 1)), $testIpIsExcluded);
+        $excluded = new VisitExcluded(new Request(array('idsite' => $idsite, 'rec' => 1)));
         $this->assertFalse($excluded->isExcluded());
 
         $username = 'admin';
         $storage = $this->getStorage($username);
         $storage->setIp($excludedIp);
 
-        $excluded = new VisitExcluded(new Request(array('idsite' => $idsite, 'rec' => 1)), $testIpIsExcluded);
+        $excluded = new VisitExcluded(new Request(array('idsite' => $idsite, 'rec' => 1)));
         $this->assertTrue($excluded->isExcluded());
     }
 
