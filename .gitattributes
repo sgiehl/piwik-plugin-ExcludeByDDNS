@@ -1,0 +1,6 @@
+config/test.php export-ignore
+tests/ export-ignore
+.gitignore export-ignore
+.gitattributes export-ignore
+.github export-ignore
+.travis.yml export-ignore
