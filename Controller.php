@@ -49,6 +49,7 @@ class Controller extends \Piwik\Plugin\ControllerAdmin
     public function index()
     {
         Piwik::checkUserHasSomeViewAccess();
+        Piwik::checkUserIsNotAnonymous();
 
         $nonce    = Common::getRequestVar('nonce', false);
         $hostname = Common::getRequestVar('excludedHostname', false);
@@ -93,6 +94,7 @@ class Controller extends \Piwik\Plugin\ControllerAdmin
     public function update()
     {
         Piwik::checkUserHasSomeViewAccess();
+        Piwik::checkUserIsNotAnonymous();
 
         $ip = IP::getIpFromHeader();
         $user = Piwik::getCurrentUserLogin();

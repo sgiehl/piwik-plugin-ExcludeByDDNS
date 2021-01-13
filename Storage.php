@@ -8,6 +8,7 @@
  */
 namespace Piwik\Plugins\ExcludeByDDNS;
 
+use Piwik\Common;
 use Piwik\Option;
 use Piwik\Tracker\Cache;
 
@@ -59,7 +60,7 @@ class Storage
             return;
         }
 
-        $data = (array) @unserialize($data);
+        $data = (array) @Common::safe_unserialize($data);
 
         if (isset($data['hostname'])) {
             $this->hostname = $data['hostname'];
@@ -96,7 +97,7 @@ class Storage
     {
         $options = (array) Option::getLike('ExcludeByDDNS.%');
         return array_filter(array_map(function($elem){
-            $elem = unserialize($elem);
+            $elem = Common::safe_unserialize($elem);
             return $elem['ip'];
         }, array_values($options)));
     }

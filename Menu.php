@@ -9,21 +9,24 @@
 namespace Piwik\Plugins\ExcludeByDDNS;
 
 use Piwik\Menu\MenuAdmin;
+use Piwik\Piwik;
 
 class Menu extends \Piwik\Plugin\Menu
 {
     public function configureAdminMenu(MenuAdmin $menu)
     {
-        $menu->addDiagnosticItem(
-            'ExcludeByDDNS_DDNSStatus',
-            $this->urlForAction('admin'),
-            15
-        );
-        $menu->addPersonalItem(
-            'ExcludeByDDNS_DDNSSettings',
-            $this->urlForAction('index'),
-            15,
-            'ExcludeByDDNS_DDNSSettingsDescription'
-        );
+        if (!Piwik::isUserIsAnonymous()) {
+            $menu->addDiagnosticItem(
+                'ExcludeByDDNS_DDNSStatus',
+                $this->urlForAction('admin'),
+                15
+            );
+            $menu->addPersonalItem(
+                'ExcludeByDDNS_DDNSSettings',
+                $this->urlForAction('index'),
+                15,
+                'ExcludeByDDNS_DDNSSettingsDescription'
+            );
+        }
     }
 }
