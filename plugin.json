@@ -1,6 +1,6 @@
 {
   "name": "ExcludeByDDNS",
-  "version": "4.0.1",
+  "version": "4.0.2",
   "description": "This plugin allows you to dynamically exclude a IP using DDNS update",
   "keywords": ["ddns", "ipexclude"],
   "license": "GPL v3+",
