@@ -35,7 +35,7 @@ class ExcludeByDDNS extends \Piwik\Plugin
         return true;
     }
 
-    public function checkIfIpIsExcluded(&$exclude)
+    public function checkIfIpIsExcluded(&$exclude, $request)
     {
         if ($exclude) {
             Common::printDebug("Visit is already excluded, no need to check exclusion by DDNS.");
@@ -49,7 +49,7 @@ class ExcludeByDDNS extends \Piwik\Plugin
             return; // Nothing to exclude
         }
 
-        $ip = \Matomo\Network\IP::fromStringIP(IP::getIpFromHeader());
+        $ip = \Matomo\Network\IP::fromStringIP($request->getIpString());
         if ($ip->isInRanges($excludedIPs)) {
             Common::printDebug('Visitor IP ' . $ip->toString() . ' is excluded from being tracked');
             $exclude = true;
