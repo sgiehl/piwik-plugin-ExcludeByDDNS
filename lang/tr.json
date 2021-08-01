@@ -13,7 +13,7 @@
         "HostnameExclusionDesc": "Belirli bir sunucu adını güncellemek için kullandığınız bir DDNS güncellemesi varsa, bu sunucu adını katılmayacak IP adresini yenilemek için kullanabilirsiniz.",
         "HostnameExclusionDesc2": "Güncelleme işlemi saatte bir kere sunucunun IP adresi çözümlenerek yapılır",
         "NoExclusionsSet": "Katılmayacak IP adresi yapılandırılmamış.",
-        "Hostname": "Sunucu Adı",
+        "Hostname": "Sunucu adı",
         "HostnameError": "Belirtilen sunucu adının IP adresi çözümlenemedi"
     }
 }
