@@ -3,6 +3,17 @@
         "DDNSSettings": "DDNS-innstillinger",
         "DDNSStatus": "DDNS-status",
         "CurrentExcludedIp": "Din nåværende ekskluderte IP er: %s (sist oppdatert: %s)",
-        "Hostname": "Vertsnavn"
+        "Hostname": "Vertsnavn",
+        "NoExclusionsSet": "",
+        "HostnameExclusionDesc": "",
+        "HostnameExclusionDesc2": "",
+        "PluginDescription": "",
+        "HostnameExclusion": "",
+        "DDNSSettingsDescription": "",
+        "DDNSUpdateExclusionDesc2": "",
+        "DDNSUpdateExclusionDesc": "",
+        "NoIpExcluded": "",
+        "DDNSUpdateExclusion": "",
+        "HostnameError": ""
     }
 }
