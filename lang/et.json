@@ -3,8 +3,6 @@
         "DDNSSettings": "DDNS seaded",
         "DDNSStatus": "DDNS staatus",
         "Hostname": "Hostinimi",
-        "PluginDescription": "",
-        "NoIpExcluded": "",
-        "DDNSUpdateExclusion": ""
+        "NoIpExcluded": ""
     }
 }

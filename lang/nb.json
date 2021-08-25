@@ -4,7 +4,6 @@
         "DDNSStatus": "DDNS-status",
         "CurrentExcludedIp": "Din nåværende ekskluderte IP er: %s (sist oppdatert: %s)",
         "Hostname": "Vertsnavn",
-        "PluginDescription": "",
         "DDNSUpdateExclusionDesc": ""
     }
 }
