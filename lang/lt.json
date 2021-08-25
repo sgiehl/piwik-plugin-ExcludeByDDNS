@@ -2,8 +2,6 @@
     "ExcludeByDDNS": {
         "DDNSSettings": "DDNS nustatymai",
         "DDNSStatus": "DDNS Būsena",
-        "DDNSSettingsDescription": "",
-        "HostnameExclusionDesc2": "",
-        "HostnameExclusionDesc": ""
+        "HostnameExclusionDesc2": ""
     }
 }
