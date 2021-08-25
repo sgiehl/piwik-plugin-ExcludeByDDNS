@@ -1,5 +1,19 @@
 {
     "ExcludeByDDNS": {
-        "DDNSSettings": "Setări DDNS"
+        "DDNSSettings": "Setări DDNS",
+        "DDNSSettingsDescription": "",
+        "CurrentExcludedIp": "",
+        "DDNSStatus": "",
+        "DDNSUpdateExclusion": "",
+        "PluginDescription": "",
+        "HostnameError": "",
+        "HostnameExclusion": "",
+        "DDNSUpdateExclusionDesc": "",
+        "HostnameExclusionDesc2": "",
+        "Hostname": "",
+        "HostnameExclusionDesc": "",
+        "NoExclusionsSet": "",
+        "DDNSUpdateExclusionDesc2": "",
+        "NoIpExcluded": ""
     }
 }
