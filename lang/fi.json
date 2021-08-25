@@ -8,6 +8,12 @@
         "NoIpExcluded": "Mitään IP-osoitteita ei ole suljettu pois.",
         "DDNSUpdateExclusion": "Käytä DDNS-päivitystä pois suljettujen IP:iden päivittämiseen",
         "Hostname": "Isäntänimi",
-        "HostnameError": "Nimen selvittäminen IP-osoitteeksi epäonnistui"
+        "HostnameError": "Nimen selvittäminen IP-osoitteeksi epäonnistui",
+        "DDNSUpdateExclusionDesc": "",
+        "NoExclusionsSet": "",
+        "DDNSUpdateExclusionDesc2": "",
+        "HostnameExclusion": "",
+        "HostnameExclusionDesc2": "",
+        "HostnameExclusionDesc": ""
     }
 }
