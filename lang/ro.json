@@ -1,6 +1,5 @@
 {
     "ExcludeByDDNS": {
-        "DDNSSettings": "Setări DDNS",
-        "DDNSUpdateExclusionDesc": ""
+        "DDNSSettings": "Setări DDNS"
     }
 }

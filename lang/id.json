@@ -2,7 +2,6 @@
     "ExcludeByDDNS": {
         "DDNSSettings": "Pengaturan DDNS",
         "DDNSStatus": "Status DDNS",
-        "Hostname": "Nama Host",
-        "NoExclusionsSet": ""
+        "Hostname": "Nama Host"
     }
 }
