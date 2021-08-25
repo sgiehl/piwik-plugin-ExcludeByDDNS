@@ -9,6 +9,11 @@
         "DDNSUpdateExclusionDesc": "DDNS अद्यतन का उपयोग करके अपने गतिशील आईपी पते को बाहर करने के क्रम में, निम्न URL का उपयोग करें:",
         "NoExclusionsSet": "कॉन्फ़िगर किया गया कोई बहिष्करण वर्तमान में कर रहे हैं।",
         "Hostname": "होस्ट नाम",
-        "HostnameError": "दिए गए मेजबाननाम के IP को हल करने में असमर्थ"
+        "HostnameError": "दिए गए मेजबाननाम के IP को हल करने में असमर्थ",
+        "HostnameExclusion": "",
+        "HostnameExclusionDesc2": "",
+        "HostnameExclusionDesc": "",
+        "DDNSUpdateExclusionDesc2": "",
+        "CurrentExcludedIp": ""
     }
 }
