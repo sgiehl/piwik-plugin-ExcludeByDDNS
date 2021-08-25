@@ -1,6 +1,5 @@
 {
     "ExcludeByDDNS": {
-        "DDNSSettings": "Setări DDNS",
-        "Hostname": ""
+        "DDNSSettings": "Setări DDNS"
     }
 }
