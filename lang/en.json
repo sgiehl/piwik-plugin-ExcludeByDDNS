@@ -1,6 +1,6 @@
 {
     "ExcludeByDDNS": {
-        "PluginDescription": "This plugin allows you to dynamically exclude a IP using DDNS update",
+        "PluginDescription": "This plugin allows you to dynamically exclude a IP using DDNS update.",
         "DDNSSettings": "DDNS Settings",
         "DDNSStatus": "DDNS Status",
         "DDNSSettingsDescription": "Here you can change the settings used to exclude your dynamic ip address.",
