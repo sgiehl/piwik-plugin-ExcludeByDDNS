@@ -1,6 +1,6 @@
 {
     "ExcludeByDDNS": {
-        "PluginDescription": "Ce composant vous permet d'exclure une IP de manière dynamique en utilisant les mises à jour DDNS",
+        "PluginDescription": "Ce composant vous permet d'exclure une IP de manière dynamique en utilisant les mises à jour DDNS.",
         "DDNSSettings": "Paramètres DDNS",
         "DDNSStatus": "Statut DDNS",
         "DDNSSettingsDescription": "Vous pouvez modifier les paramètres utlisés pour exclure votre adresse IP dynamique ici.",
@@ -8,7 +8,7 @@
         "NoIpExcluded": "Vous n'avez actuellement aucune IP exclue paramétrée.",
         "DDNSUpdateExclusion": "Utilisez la mise à jour DDNS pour rafraîchir l'IP exclue",
         "DDNSUpdateExclusionDesc": "Afin d'exclure votre adresse IP dynamique en utilisant les mises à jour DDNS, utilisez l'url suivante :",
-        "DDNSUpdateExclusionDesc2": "Vous n'avez pas besoin de fournir d'autres données comme le nom d'hôte, le nom d'utilisateur ou le mot de passe. Laissez les vides ou entrez des valeurs uniquement si nécessaire.",
+        "DDNSUpdateExclusionDesc2": "Vous n'avez pas besoin de fournir d'autres données comme le nom d'hôte, le nom d'utilisateur ou le mot de passe.<br />Laissez les vides ou entrez des valeurs uniquement si nécessaire.",
         "HostnameExclusion": "Utiliser un nom d'hôte mis à jour automatiquement pour rafraîchir l'IP exclue.",
         "HostnameExclusionDesc": "Si vous utilisez déjà une mise à jour DDNS pour mettre à jour un nom d'hôte vous pouvez utiliser ce nom d'hôte pour rafraîchir l'IP exclue.",
         "HostnameExclusionDesc2": "La mise à jour sera effectuée via une tâche toutes les heures qui résoudra l'IP du nom d'hôte.",
