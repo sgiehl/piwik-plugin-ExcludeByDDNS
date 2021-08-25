@@ -9,8 +9,6 @@
         "DDNSUpdateExclusion": "Käytä DDNS-päivitystä pois suljettujen IP:iden päivittämiseen",
         "Hostname": "Isäntänimi",
         "HostnameError": "Nimen selvittäminen IP-osoitteeksi epäonnistui",
-        "DDNSUpdateExclusionDesc2": "",
-        "HostnameExclusionDesc2": "",
-        "DDNSUpdateExclusionDesc": ""
+        "HostnameExclusionDesc2": ""
     }
 }
