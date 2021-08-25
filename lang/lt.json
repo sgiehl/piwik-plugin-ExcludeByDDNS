@@ -2,18 +2,11 @@
     "ExcludeByDDNS": {
         "DDNSSettings": "DDNS nustatymai",
         "DDNSStatus": "DDNS Būsena",
-        "Hostname": "",
         "DDNSUpdateExclusion": "",
-        "HostnameError": "",
         "DDNSSettingsDescription": "",
-        "PluginDescription": "",
         "NoExclusionsSet": "",
-        "NoIpExcluded": "",
         "DDNSUpdateExclusionDesc": "",
-        "HostnameExclusionDesc2": "",
         "HostnameExclusion": "",
-        "DDNSUpdateExclusionDesc2": "",
-        "CurrentExcludedIp": "",
-        "HostnameExclusionDesc": ""
+        "CurrentExcludedIp": ""
     }
 }

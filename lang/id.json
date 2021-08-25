@@ -3,17 +3,11 @@
         "DDNSSettings": "Pengaturan DDNS",
         "DDNSStatus": "Status DDNS",
         "Hostname": "Nama Host",
-        "PluginDescription": "",
         "HostnameExclusion": "",
-        "HostnameExclusionDesc2": "",
         "DDNSSettingsDescription": "",
-        "NoIpExcluded": "",
         "DDNSUpdateExclusionDesc": "",
-        "CurrentExcludedIp": "",
         "NoExclusionsSet": "",
-        "HostnameExclusionDesc": "",
         "DDNSUpdateExclusion": "",
-        "DDNSUpdateExclusionDesc2": "",
         "HostnameError": ""
     }
 }
