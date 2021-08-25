@@ -1,12 +1,8 @@
 {
     "ExcludeByDDNS": {
         "PluginDescription": "Plugin này cho phép bạn tự động loại trừ một IP sử dụng cập nhật DDNS",
-        "DDNSSettingsDescription": "",
         "CurrentExcludedIp": "",
-        "HostnameError": "",
         "HostnameExclusionDesc2": "",
-        "NoExclusionsSet": "",
-        "DDNSUpdateExclusionDesc": "",
-        "DDNSUpdateExclusion": ""
+        "DDNSUpdateExclusionDesc": ""
     }
 }

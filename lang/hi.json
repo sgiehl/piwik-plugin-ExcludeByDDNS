@@ -10,7 +10,6 @@
         "NoExclusionsSet": "कॉन्फ़िगर किया गया कोई बहिष्करण वर्तमान में कर रहे हैं।",
         "Hostname": "होस्ट नाम",
         "HostnameError": "दिए गए मेजबाननाम के IP को हल करने में असमर्थ",
-        "HostnameExclusionDesc2": "",
         "DDNSUpdateExclusionDesc2": ""
     }
 }

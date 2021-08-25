@@ -3,11 +3,8 @@
         "DDNSSettings": "Pengaturan DDNS",
         "DDNSStatus": "Status DDNS",
         "Hostname": "Nama Host",
-        "HostnameExclusion": "",
         "DDNSSettingsDescription": "",
-        "DDNSUpdateExclusionDesc": "",
         "NoExclusionsSet": "",
-        "DDNSUpdateExclusion": "",
         "HostnameError": ""
     }
 }
