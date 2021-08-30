@@ -4,7 +4,7 @@
         "DDNSSettings": "DDNS设定",
         "DDNSStatus": "DDNS状态",
         "DDNSSettingsDescription": "在这里，您可以更改用于排除动态IP地址的设置。",
-        "CurrentExcludedIp": "您当前排除的IP是：%s（最新更新：%s）",
+        "CurrentExcludedIp": "您当前排除的IP是：%1$s（最新更新：%2$s）",
         "NoIpExcluded": "您目前没有排除的IP集。",
         "DDNSUpdateExclusion": "使用DDNS更新来刷新排除的IP",
         "DDNSUpdateExclusionDesc": "为了使用DDNS更新排除动态IP地址，请使用以下网址：",
