@@ -4,7 +4,7 @@
         "DDNSSettings": "Rregullime DDNS",
         "DDNSStatus": "Gjendje DDNS",
         "DDNSSettingsDescription": "Këtu mund të ndryshoni rregullimet e përdorura për përjashtim të adresës tuaj ip dinamike.",
-        "CurrentExcludedIp": "IP-ja juaj e përjashtuar tani është: %s (përditësimi i fundit më: %s)",
+        "CurrentExcludedIp": "IP-ja juaj e përjashtuar tani është: %1$s (përditësimi i fundit më: %2$s)",
         "NoIpExcluded": "S’keni përcaktuar ndonjë IP për përjashtim.",
         "DDNSUpdateExclusion": "Përdorni përditësim DDNS-je që të rifreskoni IP-në e përjashtuar",
         "DDNSUpdateExclusionDesc": "Që të mund të përjashtoni adresën tuaj ip dinamike përmes përdorimit të përditësimit të DDNS-së, përdorni URL-në vijuese:",
