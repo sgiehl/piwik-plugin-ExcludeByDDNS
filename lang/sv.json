@@ -4,7 +4,7 @@
         "DDNSSettings": "DDNS-inställningar",
         "DDNSStatus": "DDNS-status",
         "DDNSSettingsDescription": "Här kan du ändra inställningarna som används för att exkludera din dynamiska IP-adress.",
-        "CurrentExcludedIp": "Du exkluderar nu IP-adressen: %s (senast uppdaterad: %s)",
+        "CurrentExcludedIp": "Du exkluderar nu IP-adressen: %1$s (senast uppdaterad: %2$s)",
         "NoIpExcluded": "Du har ingen exkluderad IP-adress.",
         "DDNSUpdateExclusion": "Använd DDNS uppdatering för att uppdatera den exkluderade IP-adressen",
         "DDNSUpdateExclusionDesc": "För att kunna exkludera din IP-adress genom DDNS uppdatering, använd följande länk:",
