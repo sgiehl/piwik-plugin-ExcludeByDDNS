@@ -4,7 +4,7 @@
         "DDNSSettings": "DDNS podešavanja",
         "DDNSStatus": "DDNS status",
         "DDNSSettingsDescription": "Ovde možete promeniti pdoešavanja koja se koriste za izuzeće dinamičkih IP adresa.",
-        "CurrentExcludedIp": "Vaša trenutno izuzeta IP adresa je: %s (poslednje ažuriranje: %s)",
+        "CurrentExcludedIp": "Vaša trenutno izuzeta IP adresa je: %1$s (poslednje ažuriranje: %2$s)",
         "NoIpExcluded": "Trenutno nemate izuzete IP adrese.",
         "DDNSUpdateExclusion": "Koristi DDNS ažuriranje kako bi osvežio izuzete IP adrese",
         "DDNSUpdateExclusionDesc": "Da biste izuzeli vašu dinamičku IP adresu koristeći DDNS ažuriranje, koristite sledeći URL:",

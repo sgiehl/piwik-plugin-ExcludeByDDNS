@@ -4,7 +4,7 @@
         "DDNSSettings": "DDNS ayarları",
         "DDNSStatus": "DDNS durumu",
         "DDNSSettingsDescription": "Devingen IP adreslerinizin katılmaması için kullanılacak ayarlar bu bölümden düzenlenebilir.",
-        "CurrentExcludedIp": "Geçerli katılmayan IP adresiniz: %s (son güncelleme: %s)",
+        "CurrentExcludedIp": "Geçerli katılmayan IP adresiniz: %1$s (son güncelleme: %2$s)",
         "NoIpExcluded": "Katılmamak üzere ayarlanmış bir IP adresi yok.",
         "DDNSUpdateExclusion": "Katılmayan IP adresini yenilemek için DDNS güncellemesi kullanılsın",
         "DDNSUpdateExclusionDesc": "DDNS güncellemesi kullanılarak devingen IP adresinizin katılmaması için şu adresi kullanın:",

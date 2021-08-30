@@ -2,7 +2,7 @@
     "ExcludeByDDNS": {
         "DDNSSettings": "DDNS-innstillinger",
         "DDNSStatus": "DDNS-status",
-        "CurrentExcludedIp": "Din nåværende ekskluderte IP er: %s (sist oppdatert: %s)",
+        "CurrentExcludedIp": "Din nåværende ekskluderte IP er: %1$s (sist oppdatert: %2$s)",
         "Hostname": "Vertsnavn"
     }
 }

@@ -4,7 +4,7 @@
         "DDNSSettings": "DDNS 設定",
         "DDNSStatus": "DDNS ステータス",
         "DDNSSettingsDescription": "ここでは、動的 IP アドレスを除外するために使用される設定を変更することができます。",
-        "CurrentExcludedIp": "現在除外されている IP アドレス: %s (最終更新: %s )",
+        "CurrentExcludedIp": "現在除外されている IP アドレス: %1$s (最終更新: %2$s )",
         "NoIpExcluded": "除外 IP は現在設定されていません。",
         "DDNSUpdateExclusion": "除外 IP を更新するには、DDNS をアップデートしてください",
         "DDNSUpdateExclusionDesc": "DDNS アップデートを使用して動的 IP アドレスを除外するには、以下の url を使用してください：",

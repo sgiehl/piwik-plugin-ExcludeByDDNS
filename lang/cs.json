@@ -4,7 +4,7 @@
         "DDNSSettings": "Nastavení DDNS",
         "DDNSStatus": "Stav DDNS",
         "DDNSSettingsDescription": "Zde můžete změnit nastavení vyloučení vaší dynamické ip adresy.",
-        "CurrentExcludedIp": "Vaše aktuálně vyloučená IP je %s (poslední aktualizace %s)",
+        "CurrentExcludedIp": "Vaše aktuálně vyloučená IP je %1$s (poslední aktualizace %2$s)",
         "NoIpExcluded": "Aktuálně nemáte nastavenou vyloučenou IP.",
         "DDNSUpdateExclusion": "Použít DDNS aktualizaci pro obnovení vyloučené IP",
         "DDNSUpdateExclusionDesc": "Pokud chcete vaši dynamickou IP adresu vyloučit pomocí DDNS aktualizace, použijte následující URL:",

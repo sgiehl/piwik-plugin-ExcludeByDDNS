@@ -4,7 +4,7 @@
         "DDNSSettings": "動態 DNS 設定",
         "DDNSStatus": "動態 DNS 狀態",
         "DDNSSettingsDescription": "你可以在這裡變更設定來排除你的動態 IP 位址。",
-        "CurrentExcludedIp": "你目前排除的 IP 位址是：%s（上次更新：%s）",
+        "CurrentExcludedIp": "你目前排除的 IP 位址是：%1$s（上次更新：%2$s）",
         "NoIpExcluded": "你目前還沒有設定排除任何 IP 位址。",
         "DDNSUpdateExclusion": "使用動態 DNS 更新來重新整理排除的 IP 位址",
         "DDNSUpdateExclusionDesc": "要透過動態 DNS 更新來排除你的動態 IP 位址，使用以下網址：",

@@ -4,7 +4,7 @@
         "DDNSSettings": "Настройки DDNS",
         "DDNSStatus": "Статус DDNS",
         "DDNSSettingsDescription": "Здесь вы можете изменить настройки, чтобы исключить ваш адрес.",
-        "CurrentExcludedIp": "Ваш адрес в настоящее время: %s (обновлён: %s)",
+        "CurrentExcludedIp": "Ваш адрес в настоящее время: %1$s (обновлён: %2$s)",
         "NoIpExcluded": "В настоящее время у вас нет исключенного IP набора.",
         "DDNSUpdateExclusion": "Используйте обновленый DDNS, чтобы обновить исключенные IP",
         "DDNSUpdateExclusionDesc": "Для того, чтобы исключить динамический IP-адрес с помощью обновления DDNS, используйте следующий URL:",
