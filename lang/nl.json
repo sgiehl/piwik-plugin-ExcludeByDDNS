@@ -4,7 +4,7 @@
         "DDNSSettings": "DDNS-instellingen",
         "DDNSStatus": "Status DDNS",
         "DDNSSettingsDescription": "Hier kun je de instellingen, om je dynamisch IP uit te sluiten, wijzigen.",
-        "CurrentExcludedIp": "Uw huidige uitgesloten IP is: %s (laatst bijgewerkt: %s)",
+        "CurrentExcludedIp": "Uw huidige uitgesloten IP is: %1$s (laatst bijgewerkt: %2$s)",
         "NoIpExcluded": "Momenteel heb je geen uitgesloten IP's ingesteld.",
         "DDNSUpdateExclusion": "Gebruik DDNS update om het uitgesloten IP te vernieuwen.",
         "DDNSUpdateExclusionDesc": "Om je dynamisch IP via DDNS update uit te sluiten, gebruik de volgende url:",
