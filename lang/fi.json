@@ -4,7 +4,7 @@
         "DDNSSettings": "DDNS-asetukset",
         "DDNSStatus": "DDNS:n tila",
         "DDNSSettingsDescription": "Täällä voit muuttaa asetuksia, jotka sulkevat dynaamisen IP-osoitteesi pois seurannasta.",
-        "CurrentExcludedIp": "Tällä hetkellä pois suljettu IP-osoitteesi: %s (viimeisin päivitys: %s)",
+        "CurrentExcludedIp": "Tällä hetkellä pois suljettu IP-osoitteesi: %1$s (viimeisin päivitys: %2$s)",
         "NoIpExcluded": "Mitään IP-osoitteita ei ole suljettu pois.",
         "DDNSUpdateExclusion": "Käytä DDNS-päivitystä pois suljettujen IP:iden päivittämiseen",
         "Hostname": "Isäntänimi",
