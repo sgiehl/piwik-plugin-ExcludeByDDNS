@@ -1,19 +1,19 @@
 {
     "ExcludeByDDNS": {
-        "PluginDescription": "這個外掛讓你透過動態 DNS 更新來動態排除 IP 位址。",
+        "CurrentExcludedIp": "您当前排除的IP是：%1$s（最新更新：%2$s）",
         "DDNSSettings": "動態 DNS 設定",
-        "DDNSStatus": "動態 DNS 狀態",
         "DDNSSettingsDescription": "你可以在這裡變更設定來排除你的動態 IP 位址。",
-        "CurrentExcludedIp": "你目前排除的 IP 位址是：%1$s（上次更新：%2$s）",
-        "NoIpExcluded": "你目前還沒有設定排除任何 IP 位址。",
+        "DDNSStatus": "動態 DNS 狀態",
         "DDNSUpdateExclusion": "使用動態 DNS 更新來重新整理排除的 IP 位址",
         "DDNSUpdateExclusionDesc": "要透過動態 DNS 更新來排除你的動態 IP 位址，使用以下網址：",
         "DDNSUpdateExclusionDesc2": "你不需要傳送任何像是域名、使用者名稱或密碼的資料。留空它們或是填入必要的值。",
+        "Hostname": "域名",
+        "HostnameError": "無法解析域名的 IP 位址。",
         "HostnameExclusion": "使用域名自動更新來重新整理排除的 IP 位址",
         "HostnameExclusionDesc": "如果你已經在使用動態 DNS 更新來更新特定域名，你可以使用這些域名來重新整理排除的 IP 位址。",
         "HostnameExclusionDesc2": "解析域名的更新將於每小時任務執行",
         "NoExclusionsSet": "目前沒有設定任何排除。",
-        "Hostname": "域名",
-        "HostnameError": "無法解析域名的 IP 位址。"
+        "NoIpExcluded": "你目前還沒有設定排除任何 IP 位址。",
+        "PluginDescription": "這個外掛讓你透過動態 DNS 更新來動態排除 IP 位址。"
     }
 }
