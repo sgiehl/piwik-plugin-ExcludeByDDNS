@@ -1,8 +1,10 @@
 {
     "ExcludeByDDNS": {
-        "DDNSSettings": "DDNS-innstillinger",
-        "DDNSStatus": "DDNS-status",
         "CurrentExcludedIp": "Din nåværende ekskluderte IP er: %1$s (sist oppdatert: %2$s)",
-        "Hostname": "Vertsnavn"
+        "DDNSSettings": "DDNS-innstillinger",
+        "DDNSSettingsDescription": "Her kan du endre innstillingene brukt til å ekskludere din dynamiske IP-adresse.",
+        "DDNSStatus": "DDNS-status",
+        "Hostname": "Vertsnavn",
+        "PluginDescription": "Dette programtillegget lar deg dynamisk ekskludere en IP-adresse ved bruk av DDNS-oppdatering"
     }
 }
