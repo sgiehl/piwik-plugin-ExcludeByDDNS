@@ -1,19 +1,19 @@
 {
     "ExcludeByDDNS": {
-        "PluginDescription": "このプラグインを使用すると、動的 DDNS アップデートを使用して IP を除外することができます",
-        "DDNSSettings": "DDNS 設定",
-        "DDNSStatus": "DDNS ステータス",
-        "DDNSSettingsDescription": "ここでは、動的 IP アドレスを除外するために使用される設定を変更することができます。",
         "CurrentExcludedIp": "現在除外されている IP アドレス: %1$s (最終更新: %2$s )",
-        "NoIpExcluded": "除外 IP は現在設定されていません。",
+        "DDNSSettings": "DDNS 設定",
+        "DDNSSettingsDescription": "ここでは、動的 IP アドレスを除外するために使用される設定を変更することができます。",
+        "DDNSStatus": "DDNS ステータス",
         "DDNSUpdateExclusion": "除外 IP を更新するには、DDNS をアップデートしてください",
         "DDNSUpdateExclusionDesc": "DDNS アップデートを使用して動的 IP アドレスを除外するには、以下の url を使用してください：",
         "DDNSUpdateExclusionDesc2": "ホスト名、ユーザー名やパスワードのようなデータを渡す必要はありません。それらは空のままか、値が必要な場合何か入力します。",
-        "HostnameExclusion": "自動アップデートされたホスト名を使用して、除外 IP を更新してください。",
+        "Hostname": "ホスト名",
+        "HostnameError": "指定されたホスト名のIPを解決できません",
+        "HostnameExclusion": "自動更新されたホスト名を使用して、除外されたIPをリフレッシュしてください",
         "HostnameExclusionDesc": "すでに DDNS アップデートを使用してホスト名を更新している場合は、このホスト名を使って除外 IP を更新することができます。",
         "HostnameExclusionDesc2": "ホストネームの IP を解決する毎時のタスクとしてアップデートされます",
-        "NoExclusionsSet": "除外設定がありません",
-        "Hostname": "ホスト名",
-        "HostnameError": "指定したホスト名の IP アドレスを解決できません。"
+        "NoExclusionsSet": "現在のところ、除外は設定されていません。",
+        "NoIpExcluded": "除外 IP は現在設定されていません。",
+        "PluginDescription": "このプラグインを使用すると、動的 DDNS アップデートを使用して IP を除外することができます"
     }
 }
