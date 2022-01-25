@@ -1,18 +1,18 @@
 {
     "ExcludeByDDNS": {
-        "PluginDescription": "This plugin allows you to dynamically exclude a IP using DDNS update",
+        "PluginDescription": "This plugin lets you dynamically exclude an IP using a DDNS update",
         "DDNSSettings": "DDNS Settings",
         "DDNSStatus": "DDNS Status",
-        "DDNSSettingsDescription": "Here you can change the settings used to exclude your dynamic ip address.",
+        "DDNSSettingsDescription": "Settings to exclude your dynamic IP address.",
         "CurrentExcludedIp": "Your currently excluded IP is: %1$s (last update: %2$s)",
-        "NoIpExcluded": "You have currently no excluded IP set.",
-        "DDNSUpdateExclusion": "Use DDNS update to refresh the excluded IP",
-        "DDNSUpdateExclusionDesc": "In order to exclude your dynamic ip address using DDNS update, use the following url:",
-        "DDNSUpdateExclusionDesc2": "You do not need to pass any other data like hostname, username or password. Leave them empty or type in anything if the value is required.",
-        "HostnameExclusion": "Use automatic updated hostname to refresh excluded IP",
-        "HostnameExclusionDesc": "If you are already using a DDNS update to update a specific hostname you can use this hostname to refresh the excluded IP.",
-        "HostnameExclusionDesc2": "The update will be done as an hourly task resolving the hostname's IP",
-        "NoExclusionsSet": "There are currently no exclusions configured.",
+        "NoIpExcluded": "You have not excluded any IP yet.",
+        "DDNSUpdateExclusion": "Use a DDNS update to refresh the excluded IP",
+        "DDNSUpdateExclusionDesc": "Use the following URL to exclude your dynamic IP address using a DDNS update:",
+        "DDNSUpdateExclusionDesc2": "Supplying hostname, username or password is not needed. Leave them empty or type in anything if a value is required.",
+        "HostnameExclusion": "Exclude the IP of an auto-updated hostname",
+        "HostnameExclusionDesc": "If already using a DDNS update to update a specific hostname, you can use this hostname to excluded its IP.",
+        "HostnameExclusionDesc2": "The update will resolve the IP of the hostname every hour",
+        "NoExclusionsSet": "No IP exclusions are set up.",
         "Hostname": "Hostname",
         "HostnameError": "Unable to resolve the IP of the given hostname"
     }
