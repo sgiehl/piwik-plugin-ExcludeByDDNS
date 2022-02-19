@@ -9,6 +9,7 @@
         "DDNSUpdateExclusionDesc2": "Å angi vertsnavn, brukernavn eller passord trengs ikke. La dem stå tomme, eller skriv inn hva som helst hvis en verdi kreves.",
         "Hostname": "Vertsnavn",
         "HostnameError": "Kunne ikke utlede IP-en tilhørende angitt vertsnavn",
+        "HostnameExclusionDesc2": "Oppdateringen vil utlede IP-adressen tilhørende vertsnavnet hver time",
         "NoExclusionsSet": "Det er ikke satt opp noen IP-ekskluderinger.",
         "NoIpExcluded": "Du har ikke ekskludert noen IP-er enda.",
         "PluginDescription": "Dette programtillegget lar deg dynamisk ekskludere en IP-adresse ved bruk av DDNS-oppdatering"

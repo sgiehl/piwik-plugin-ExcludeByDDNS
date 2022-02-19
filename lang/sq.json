@@ -1,19 +1,19 @@
 {
     "ExcludeByDDNS": {
-        "PluginDescription": "Kjo shtojcë ju lejon të përjashtoni në mënyrë dinamike një IP duke përdorur përditësim DDNS",
-        "DDNSSettings": "Rregullime DDNS",
-        "DDNSStatus": "Gjendje DDNS",
-        "DDNSSettingsDescription": "Këtu mund të ndryshoni rregullimet e përdorura për përjashtim të adresës tuaj ip dinamike.",
         "CurrentExcludedIp": "IP-ja juaj e përjashtuar tani është: %1$s (përditësimi i fundit më: %2$s)",
-        "NoIpExcluded": "S’keni përcaktuar ndonjë IP për përjashtim.",
+        "DDNSSettings": "Rregullime DDNS",
+        "DDNSSettingsDescription": "Rregullime për të përjashtuar adresë IP dinamike.",
+        "DDNSStatus": "Gjendje DDNS",
         "DDNSUpdateExclusion": "Përdorni përditësim DDNS-je që të rifreskoni IP-në e përjashtuar",
-        "DDNSUpdateExclusionDesc": "Që të mund të përjashtoni adresën tuaj ip dinamike përmes përdorimit të përditësimit të DDNS-së, përdorni URL-në vijuese:",
-        "DDNSUpdateExclusionDesc2": "S’ju duhet të jepni ndonjë të dhënë tjetër, të tillë si strehëemër, emër përdoruesi apo fjalëkalim. Lërini të zbrazëta fushat përkatëse ose shtypni diçka, nëse vlera është e domosdoshme.",
-        "HostnameExclusion": "Përdor strehëemër të vetëpërditësuar që të rifreskohet IP-ja e përjashtuar",
-        "HostnameExclusionDesc": "Nëse po përdorni tashmë një përditësim DDNS-je që të përditësoni një strehëemër të dhënë, mund ta përdorni këtë strehëemër për të rifreskuar IP-në e përjashtuar.",
-        "HostnameExclusionDesc2": "Akti i përditësimit do të kryhet një herë në orë, duke bërë realizuar gjetjen e IP-së së strehëemrit",
-        "NoExclusionsSet": "Hëpërhë s’ka përjashtime të formësuara.",
+        "DDNSUpdateExclusionDesc": "Që të mund të përjashtoni adresën tuaj IP dinamike përmes përdorimit të përditësimit të DDNS-së, përdorni URL-në vijuese:",
+        "DDNSUpdateExclusionDesc2": "S’nevojitet dhënie strehëemri, emri përdoruesi apo fjalëkalimi. Lërini të zbrazëta, ose shtypni diçka, nëse një vlerë është e domosdoshme.",
         "Hostname": "Strehëemër",
-        "HostnameError": "S’arrihet të gjendet IP për strehëemrin e dhënë"
+        "HostnameError": "S’arrihet të gjendet IP për strehëemrin e dhënë",
+        "HostnameExclusion": "Përjashtoni IP-në e një strehëemri të vetëpërditësuar",
+        "HostnameExclusionDesc": "",
+        "HostnameExclusionDesc2": "Përditësimi do të ftillojë IP-në e strehëemrit çdo orë",
+        "NoExclusionsSet": "S’janë ujdisur përjashtime IP-sh.",
+        "NoIpExcluded": "S’keni përcaktuar ende ndonjë IP për përjashtim.",
+        "PluginDescription": "Kjo shtojcë ju lejon të përjashtoni në mënyrë dinamike një IP duke përdorur përditësim DDNS"
     }
 }
