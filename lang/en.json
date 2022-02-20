@@ -10,7 +10,7 @@
         "DDNSUpdateExclusionDesc": "Use the following URL to exclude your dynamic IP address using a DDNS update:",
         "DDNSUpdateExclusionDesc2": "Supplying hostname, username or password is not needed. Leave them empty or type in anything if a value is required.",
         "HostnameExclusion": "Exclude the IP of an auto-updated hostname",
-        "HostnameExclusionDesc": "If already using a DDNS update to update a specific hostname, you can use this hostname to excluded its IP.",
+        "HostnameExclusionDesc": "If already using a DDNS update to update a specific hostname, you can use this hostname to exclude its IP.",
         "HostnameExclusionDesc2": "The update will resolve the IP of the hostname every hour",
         "NoExclusionsSet": "No IP exclusions are set up.",
         "Hostname": "Hostname",
