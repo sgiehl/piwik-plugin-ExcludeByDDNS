@@ -10,7 +10,7 @@
         "Hostname": "Strehëemër",
         "HostnameError": "S’arrihet të gjendet IP për strehëemrin e dhënë",
         "HostnameExclusion": "Përjashtoni IP-në e një strehëemri të vetëpërditësuar",
-        "HostnameExclusionDesc": "",
+        "HostnameExclusionDesc": "Nëse po përdorni tashmë një përditësim DDNS-je për të përditësuar një strehëemër të dhënë, mund ta përdorni këtë strehëemër për të përjashtuar IP-në e tij.",
         "HostnameExclusionDesc2": "Përditësimi do të ftillojë IP-në e strehëemrit çdo orë",
         "NoExclusionsSet": "S’janë ujdisur përjashtime IP-sh.",
         "NoIpExcluded": "S’keni përcaktuar ende ndonjë IP për përjashtim.",
