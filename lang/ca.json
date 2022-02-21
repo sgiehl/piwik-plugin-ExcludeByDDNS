@@ -1,1 +1,19 @@
-{}
+{
+    "ExcludeByDDNS": {
+        "CurrentExcludedIp": "La vostra IP exclosa actualment és: %1$s (darrera actualització: %2$s)",
+        "DDNSSettings": "Configuració DDNS",
+        "DDNSSettingsDescription": "Configuració per excloure la vostra adreça IP dinàmica.",
+        "DDNSStatus": "Estat DDNS",
+        "DDNSUpdateExclusion": "Utilitzeu una actualització DDNS per actualitzar la IP exclosa",
+        "DDNSUpdateExclusionDesc": "Utilitzeu l'URL següent per excloure la vostra adreça IP dinàmica mitjançant una actualització DDNS:",
+        "DDNSUpdateExclusionDesc2": "No cal proporcionar el nom d'hoste, el nom d'usuari o la contrasenya. Deixeu-los buits o escriviu qualsevol cosa si cal un valor.",
+        "Hostname": "Nom d'hoste",
+        "HostnameError": "No es pot resoldre l'IP del nom d'hoste donat",
+        "HostnameExclusion": "Exclou la IP d'un nom d'hoste actualitzat automàticament",
+        "HostnameExclusionDesc": "Si ja utilitzeu una actualització DDNS per actualitzar un nom d'amfitrió específic, podeu utilitzar aquest nom d'amfitrió per excloure la seva IP.",
+        "HostnameExclusionDesc2": "L'actualització resoldrà la IP del nom d'amfitrió cada hora",
+        "NoExclusionsSet": "No s'ha establert cap exclusió d'IP.",
+        "NoIpExcluded": "Encara no heu exclòs cap IP.",
+        "PluginDescription": "Aquest connector us permet excloure dinàmicament una IP mitjançant una actualització DDNS"
+    }
+}
