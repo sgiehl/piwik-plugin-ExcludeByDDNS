@@ -10,6 +10,7 @@
         "Hostname": "Vertsnavn",
         "HostnameError": "Kunne ikke utlede IP-en tilhørende angitt vertsnavn",
         "HostnameExclusion": "Utelat IP-adresser for auto-oppdaterte vertsnavn",
+        "HostnameExclusionDesc": "Hvis du allerede bruker en DDNS-oppdatering for å oppdatere et gitt vertsnavn kan du bruke dette vertsnavnet for å ekskludere dets IP.",
         "HostnameExclusionDesc2": "Oppdateringen vil utlede IP-adressen tilhørende vertsnavnet hver time",
         "NoExclusionsSet": "Det er ikke satt opp noen IP-ekskluderinger.",
         "NoIpExcluded": "Du har ikke ekskludert noen IP-er enda.",
