@@ -1,7 +1,19 @@
 {
     "ExcludeByDDNS": {
+        "CurrentExcludedIp": "IP Anda yang saat ini dikecualikan adalah: %1$s (pembaruan terakhir: %2$s)",
         "DDNSSettings": "Pengaturan DDNS",
+        "DDNSSettingsDescription": "Pengaturan untuk mengecualikan alamat IP dinamis Anda.",
         "DDNSStatus": "Status DDNS",
-        "Hostname": "Nama Host"
+        "DDNSUpdateExclusion": "Gunakan pembaruan DDNS untuk menyegarkan IP yang dikecualikan",
+        "DDNSUpdateExclusionDesc": "Gunakan URL berikut ini untuk mengecualikan alamat IP dinamis Anda menggunakan pembaruan DDNS:",
+        "DDNSUpdateExclusionDesc2": "Menyediakan nama host, nama pengguna atau kata sandi tidak diperlukan. Biarkan kosong atau ketik apa pun jika diperlukan.",
+        "Hostname": "Nama Host",
+        "HostnameError": "Tidak dapat menyelesaikan IP dari nama host yang diberikan",
+        "HostnameExclusion": "Kecualikan IP dari nama host yang diperbarui secara otomatis",
+        "HostnameExclusionDesc": "Jika sudah menggunakan pembaruan DDNS untuk memperbarui nama host tertentu, Anda dapat menggunakan nama host ini untuk mengecualikan IP-nya.",
+        "HostnameExclusionDesc2": "Pembaruan akan menyelesaikan IP nama host setiap jam",
+        "NoExclusionsSet": "Tidak ada pengecualian IP yang telah diatur.",
+        "NoIpExcluded": "Anda belum mengecualikan IP apa pun.",
+        "PluginDescription": "Plugin ini memungkinkan Anda mengecualikan IP secara dinamis menggunakan pembaruan DDNS"
     }
 }
