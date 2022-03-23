@@ -1,19 +1,19 @@
 {
     "ExcludeByDDNS": {
-        "PluginDescription": "Detta tillägg ger dig tillgång till att dynamiskt exkludera en IP-adress som använder DDNS uppdatering",
-        "DDNSSettings": "DDNS-inställningar",
-        "DDNSStatus": "DDNS-status",
-        "DDNSSettingsDescription": "Här kan du ändra inställningarna som används för att exkludera din dynamiska IP-adress.",
         "CurrentExcludedIp": "Du exkluderar nu IP-adressen: %1$s (senast uppdaterad: %2$s)",
-        "NoIpExcluded": "Du har ingen exkluderad IP-adress.",
+        "DDNSSettings": "DDNS-inställningar",
+        "DDNSSettingsDescription": "Här kan du ändra inställningarna som används för att exkludera din dynamiska IP-adress.",
+        "DDNSStatus": "DDNS-status",
         "DDNSUpdateExclusion": "Använd DDNS uppdatering för att uppdatera den exkluderade IP-adressen",
         "DDNSUpdateExclusionDesc": "För att kunna exkludera din IP-adress genom DDNS uppdatering, använd följande länk:",
         "DDNSUpdateExclusionDesc2": "Du behöver inte fylla i några andra värden som värdnamn, användarnamn eller lösenord. Lämna dom tomma eller skriv in vad som helst om värdet är obligatoriskt.",
+        "Hostname": "Värdnamn",
+        "HostnameError": "Kunde inte slå upp IP-adressen för det angivna värdnamnet",
         "HostnameExclusion": "Använd automatiskt uppdaterat värdnamn för att uppdatera din exkluderade IP-adress",
         "HostnameExclusionDesc": "Om du redan använder en DDNS uppdatering för att uppdatera ett specifikt värdnamn så kan du använda det för att uppdatera den exkluderade IP-adressen.",
         "HostnameExclusionDesc2": "Uppdateringen kommer att ske som en timvis uppgift som slår upp värdnamnets IP-adress.",
         "NoExclusionsSet": "Det finns inga exkluderingar konfigurerade.",
-        "Hostname": "Värdnamn",
-        "HostnameError": "Kunde inte slå upp IP-adressen för det angivna värdnamnet"
+        "NoIpExcluded": "Du har ingen exkluderad IP-adress.",
+        "PluginDescription": "Denna tillägg låter dig dynamiskt utesluta en IP med en DDNS-uppdatering"
     }
 }
