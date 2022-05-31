@@ -14,6 +14,6 @@
         "HostnameExclusionDesc2": "Pembaruan akan menyelesaikan IP nama host setiap jam",
         "NoExclusionsSet": "Tidak ada pengecualian IP yang telah diatur.",
         "NoIpExcluded": "Anda belum mengecualikan IP apa pun.",
-        "PluginDescription": "Plugin ini memungkinkan Anda mengecualikan IP secara dinamis menggunakan pembaruan DDNS"
+        "PluginDescription": "Pengaya ini memungkinkan Anda untuk mengecualikan IP secara dinamis menggunakan pembaruan DDNS"
     }
 }
