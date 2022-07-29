@@ -14,6 +14,6 @@
         "HostnameExclusionDesc2": "Oppdateringen vil utlede IP-adressen tilhørende vertsnavnet hver time",
         "NoExclusionsSet": "Det er ikke satt opp noen IP-ekskluderinger.",
         "NoIpExcluded": "Du har ikke ekskludert noen IP-er enda.",
-        "PluginDescription": "Dette programtillegget lar deg dynamisk ekskludere en IP-adresse ved bruk av DDNS-oppdatering"
+        "PluginDescription": "Dette programtillegget lar deg dynamisk ekskludere en IP-adresse ved bruk av en DDNS-oppdatering"
     }
 }
