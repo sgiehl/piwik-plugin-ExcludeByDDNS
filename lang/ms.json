@@ -1,1 +1,10 @@
-{}
+{
+    "ExcludeByDDNS": {
+        "CurrentExcludedIp": "IP anda yang dikecualikan pada masa ini ialah: %1$s (kemas kini terakhir: %2$s)",
+        "DDNSSettings": "Tetapan DDNS",
+        "DDNSSettingsDescription": "Tetapan untuk mengecualikan alamat IP dinamik anda.",
+        "DDNSStatus": "Status DDNS",
+        "NoIpExcluded": "Anda belum mengecualikan sebarang IP lagi.",
+        "PluginDescription": "Pemalam ini membolehkan anda mengecualikan IP secara dinamik menggunakan kemas kini DDNS"
+    }
+}
