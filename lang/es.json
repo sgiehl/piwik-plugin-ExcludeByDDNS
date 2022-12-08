@@ -2,18 +2,18 @@
     "ExcludeByDDNS": {
         "CurrentExcludedIp": "El IP actualmente excluido es: %1$s (última actualización: %2$s)",
         "DDNSSettings": "Configuración DDNS",
-        "DDNSSettingsDescription": "Aquí puede cambiar los ajustes utilizados para excluír sus direcciones IP dinámicas.",
+        "DDNSSettingsDescription": "Configuración para excluir su dirección IP dinámica.",
         "DDNSStatus": "Estado DDNS",
-        "DDNSUpdateExclusion": "Use actualización DDNS para actualizar la IP excluída",
-        "DDNSUpdateExclusionDesc": "Para excluír su dirección IP dinámica usando actualización DDNS, utilice la siguiente url:",
-        "DDNSUpdateExclusionDesc2": "No necesita enviar ninguna otra información como hostname, nombre de usuario o contraseña. Déjelas vacías o escriba cualquier cosa si se requiere un valor.",
+        "DDNSUpdateExclusion": "Use una actualización de DDNS para actualizar la IP excluida",
+        "DDNSUpdateExclusionDesc": "Utilice la siguiente URL para excluir su dirección IP dinámica mediante una actualización de DDNS:",
+        "DDNSUpdateExclusionDesc2": "No es necesario proporcionar el nombre de host, el nombre de usuario o la contraseña. Déjelos vacíos o escriba cualquier cosa si se requiere un valor.",
         "Hostname": "Nombre del Host",
         "HostnameError": "No se puede resolver la IP del hostname dado",
-        "HostnameExclusion": "Utilice actualización automática de hostname para actualizar la IP excluida",
-        "HostnameExclusionDesc": "Si ya está utilizando una actualización DDNS para actualizar un hostname específico puede usarlo para actualizar la IP excluída.",
-        "HostnameExclusionDesc2": "La actualización se hará como una tarea en cada hora resolviendo el nombre de host de acuerdo a su IP",
-        "NoExclusionsSet": "No hay actualmente exclusiones configuradas.",
-        "NoIpExcluded": "No posee actualmente ningún conjunto de IP excluídas.",
+        "HostnameExclusion": "Excluir la IP de un nombre de host actualizado automáticamente",
+        "HostnameExclusionDesc": "Si ya usa una actualización de DDNS para actualizar un nombre de host específico, puede usar este nombre de host para excluir su IP.",
+        "HostnameExclusionDesc2": "La actualización resolverá la IP del nombre de host cada hora",
+        "NoExclusionsSet": "No hay exclusiones de IP.",
+        "NoIpExcluded": "Aún no has excluido ninguna IP.",
         "PluginDescription": "Este plugin permite excluir dinámicamente una IP mediante una actualización de DDNS"
     }
 }
