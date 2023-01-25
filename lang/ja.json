@@ -2,18 +2,18 @@
     "ExcludeByDDNS": {
         "CurrentExcludedIp": "現在除外されている IP アドレス: %1$s (最終更新: %2$s )",
         "DDNSSettings": "DDNS 設定",
-        "DDNSSettingsDescription": "ここでは、動的 IP アドレスを除外するために使用される設定を変更することができます。",
+        "DDNSSettingsDescription": "動的 IP アドレスを除外する設定。",
         "DDNSStatus": "DDNS ステータス",
-        "DDNSUpdateExclusion": "除外 IP を更新するには、DDNS をアップデートしてください",
-        "DDNSUpdateExclusionDesc": "DDNS アップデートを使用して動的 IP アドレスを除外するには、以下の url を使用してください：",
-        "DDNSUpdateExclusionDesc2": "ホスト名、ユーザー名やパスワードのようなデータを渡す必要はありません。それらは空のままか、値が必要な場合何か入力します。",
+        "DDNSUpdateExclusion": "DDNS 更新を使用して、除外された IP を更新します",
+        "DDNSUpdateExclusionDesc": "次の URL を使用して、DDNS 更新を使用して動的 IPアドレスを除外します:",
+        "DDNSUpdateExclusionDesc2": "ホスト名、ユーザー名、またはパスワードを指定する必要はありません。 空のままにするか、値が必要な場合は何か入力してください。",
         "Hostname": "ホスト名",
         "HostnameError": "指定されたホスト名のIPを解決できません",
-        "HostnameExclusion": "自動更新されたホスト名を使用して、除外されたIPをリフレッシュしてください",
-        "HostnameExclusionDesc": "すでに DDNS アップデートを使用してホスト名を更新している場合は、このホスト名を使って除外 IP を更新することができます。",
-        "HostnameExclusionDesc2": "ホストネームの IP を解決する毎時のタスクとしてアップデートされます",
-        "NoExclusionsSet": "現在のところ、除外は設定されていません。",
-        "NoIpExcluded": "除外 IP は現在設定されていません。",
-        "PluginDescription": "このプラグインを使用すると、動的 DDNS アップデートを使用して IP を除外することができます"
+        "HostnameExclusion": "自動更新されたホスト名の IP を除外する",
+        "HostnameExclusionDesc": "すでに DDNS 更新を使用して特定のホスト名を更新している場合は、このホスト名を使用してその IP を除外できます。",
+        "HostnameExclusionDesc2": "更新により、1 時間ごとにホスト名の IP が解決されます",
+        "NoExclusionsSet": "IP 除外は設定されていません。",
+        "NoIpExcluded": "IP をまだ除外していません。",
+        "PluginDescription": "このプラグインを使用すると、DDNS 更新を使用して IP を動的に除外できます"
     }
 }
