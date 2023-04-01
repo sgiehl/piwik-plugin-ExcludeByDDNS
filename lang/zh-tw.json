@@ -14,6 +14,6 @@
         "HostnameExclusionDesc2": "解析域名的更新將於每小時任務執行",
         "NoExclusionsSet": "目前沒有設定任何排除。",
         "NoIpExcluded": "你目前還沒有設定排除任何 IP 位址。",
-        "PluginDescription": "這個外掛讓你透過動態 DNS 更新來動態排除 IP 位址。"
+        "PluginDescription": "這個外掛讓你透過 DDNS 更新來動態排除 IP 位址"
     }
 }
