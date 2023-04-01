@@ -1,19 +1,19 @@
 {
     "ExcludeByDDNS": {
-        "PluginDescription": "Deze plugin laat je toe om dynamisch een IP uit te sluiten door gebruik te maken van een DDNS update",
-        "DDNSSettings": "DDNS-instellingen",
-        "DDNSStatus": "Status DDNS",
-        "DDNSSettingsDescription": "Hier kun je de instellingen, om je dynamisch IP uit te sluiten, wijzigen.",
         "CurrentExcludedIp": "Uw huidige uitgesloten IP is: %1$s (laatst bijgewerkt: %2$s)",
-        "NoIpExcluded": "Momenteel heb je geen uitgesloten IP's ingesteld.",
-        "DDNSUpdateExclusion": "Gebruik DDNS update om het uitgesloten IP te vernieuwen.",
-        "DDNSUpdateExclusionDesc": "Om je dynamisch IP via DDNS update uit te sluiten, gebruik de volgende url:",
-        "DDNSUpdateExclusionDesc2": "Je hoeft je hostname, gebruikersnaam of wachtwoord niet mee te geven. Laat ze leeg of vul iets in indien de waarde is vereist.",
-        "HostnameExclusion": "Gebruik automatische hostname updates om je uitgesloten IP te vernieuwen.",
-        "HostnameExclusionDesc": "Indien je reeds DDNS update gebruikt om een specifieke hostname uit te sluiten, dan kun je deze hostname gebruiken om het uitgesloten IP aan te passen.",
-        "HostnameExclusionDesc2": "De update zal om het uur als taak gebeuren om het IP adres bij de hostnaam op te zoeken.",
-        "NoExclusionsSet": "Er zijn momenteel geen uitsluitingen geconfigureerd.",
+        "DDNSSettings": "DDNS-instellingen",
+        "DDNSSettingsDescription": "Instellingen om uw dynamisch IP uit te sluiten.",
+        "DDNSStatus": "Status DDNS",
+        "DDNSUpdateExclusion": "Gebruik een DDNS update om het uitgesloten IP te vernieuwen",
+        "DDNSUpdateExclusionDesc": "Gebruik volgende URL om uw dynamisch IP via een DDNS update uit te sluiten:",
+        "DDNSUpdateExclusionDesc2": "Hostnaam, gebruikersnaam of wachtwoord is niet nodig. Laat ze leeg of vul iets in indien een waarde vereist is.",
         "Hostname": "Hostnaam",
-        "HostnameError": "Kan het bijbehorende IP adres van de hostnaam niet vinden."
+        "HostnameError": "Kan het bijbehorend IP-adres van de hostnaam niet vinden",
+        "HostnameExclusion": "Het IP van een automatisch bijgewerkte hostnaam uitsluiten",
+        "HostnameExclusionDesc": "Indien u reeds DDNS update gebruikt om een specifieke hostname bij te werken, dan kunt u deze hostname gebruiken om het IP uit te sluiten.",
+        "HostnameExclusionDesc2": "De update zal elk uur het IP-adres bij de hostnaam opvragen",
+        "NoExclusionsSet": "Geen IP-uitsluitingen ingesteld.",
+        "NoIpExcluded": "U heeft nog geen enkele IP uitgesloten.",
+        "PluginDescription": "Deze plugin laat u toe om dynamisch een IP uit te sluiten door gebruik te maken van een DDNS update"
     }
 }
