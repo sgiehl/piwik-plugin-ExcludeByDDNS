@@ -6,6 +6,7 @@
  * @license http://www.gnu.org/licenses/gpl-3.0.html GPL v3 or later
  *
  */
+
 namespace Piwik\Plugins\ExcludeByDDNS;
 
 use Piwik\Common;
@@ -55,7 +56,7 @@ class Storage
 
     protected function load()
     {
-        $data = Option::get('ExcludeByDDNS.'.$this->username);
+        $data = Option::get('ExcludeByDDNS.' . $this->username);
         if (!$data) {
             return;
         }
@@ -81,7 +82,7 @@ class Storage
             'lastUpdated' => $this->lastUpdated,
         );
 
-        Option::set('ExcludeByDDNS.'.$this->username, serialize($data));
+        Option::set('ExcludeByDDNS.' . $this->username, serialize($data));
         Cache::clearCacheGeneral();
     }
 
@@ -101,5 +102,4 @@ class Storage
             return $elem['ip'];
         }, array_values($options)));
     }
-
 }

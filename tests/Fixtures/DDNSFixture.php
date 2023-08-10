@@ -42,5 +42,4 @@ class DDNSFixture extends Fixture
             $this->assertSame($this->idSite, $idSite);
         }
     }
-
 }

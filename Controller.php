@@ -6,6 +6,7 @@
  * @license http://www.gnu.org/licenses/gpl-3.0.html GPL v3 or later
  *
  */
+
 namespace Piwik\Plugins\ExcludeByDDNS;
 
 use Piwik\Common;
@@ -59,7 +60,7 @@ class Controller extends \Piwik\Plugin\ControllerAdmin
         $view = new View('@ExcludeByDDNS/index');
         $this->setBasicVariablesView($view);
 
-        if ($nonce !== false && Nonce::verifyNonce('Piwik_ExcludeHostname'.Piwik::getCurrentUserLogin(), $nonce)) {
+        if ($nonce !== false && Nonce::verifyNonce('Piwik_ExcludeHostname' . Piwik::getCurrentUserLogin(), $nonce)) {
             if($hostname) {
                 $ip = gethostbyname($hostname);
 
@@ -75,7 +76,7 @@ class Controller extends \Piwik\Plugin\ControllerAdmin
             }
         }
 
-        $view->updateUrl = Url::getCurrentUrlWithoutQueryString(false) .'?'. Url::getQueryStringFromParameters(array(
+        $view->updateUrl = Url::getCurrentUrlWithoutQueryString(false) . '?' . Url::getQueryStringFromParameters(array(
                 'module' => 'ExcludeByDDNS',
                 'action' => 'update',
                 'token_auth' => '{app_specific_token}'
@@ -85,7 +86,7 @@ class Controller extends \Piwik\Plugin\ControllerAdmin
         $view->excludedIp = $storage->getIp();
         $lastUpdated = $storage->getLastUpdated();
         $view->lastUpdated = $lastUpdated ? Date::factory($lastUpdated)->getLocalized(Date::DATETIME_FORMAT_SHORT) : '';
-        $view->nonce = Nonce::getNonce('Piwik_ExcludeHostname'.Piwik::getCurrentUserLogin(), 3600);
+        $view->nonce = Nonce::getNonce('Piwik_ExcludeHostname' . Piwik::getCurrentUserLogin(), 3600);
 
         return $view->render();
     }
