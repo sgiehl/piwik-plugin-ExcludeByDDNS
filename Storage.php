@@ -1,8 +1,9 @@
 <?php
+
 /**
  * Matomo - free/libre analytics platform
  *
- * @link https://matomo.org
+ * @link    https://matomo.org
  * @license http://www.gnu.org/licenses/gpl-3.0.html GPL v3 or later
  *
  */
@@ -49,7 +50,7 @@ class Storage
 
     public function setIp($ip)
     {
-        $this->ip = $ip;
+        $this->ip          = $ip;
         $this->lastUpdated = time();
         $this->save();
     }
@@ -61,7 +62,7 @@ class Storage
             return;
         }
 
-        $data = (array) @Common::safe_unserialize($data);
+        $data = (array)@Common::safe_unserialize($data);
 
         if (isset($data['hostname'])) {
             $this->hostname = $data['hostname'];
@@ -76,11 +77,11 @@ class Storage
 
     protected function save()
     {
-        $data = array(
-            'hostname' => $this->hostname,
-            'ip' => $this->ip,
+        $data = [
+            'hostname'    => $this->hostname,
+            'ip'          => $this->ip,
             'lastUpdated' => $this->lastUpdated,
-        );
+        ];
 
         Option::set('ExcludeByDDNS.' . $this->username, serialize($data));
         Cache::clearCacheGeneral();
@@ -88,18 +89,22 @@ class Storage
 
     public static function getAllUsersWithConfig()
     {
-        $options = (array) Option::getLike('ExcludeByDDNS.%');
-        return array_filter(array_map(function($elem){
-            return substr($elem, 14);
-        }, array_keys($options)));
+        $options = (array)Option::getLike('ExcludeByDDNS.%');
+        return array_filter(
+            array_map(function ($elem) {
+                return substr($elem, 14);
+            }, array_keys($options))
+        );
     }
 
     public static function getAllExcludedIps()
     {
-        $options = (array) Option::getLike('ExcludeByDDNS.%');
-        return array_filter(array_map(function($elem){
-            $elem = Common::safe_unserialize($elem);
-            return $elem['ip'];
-        }, array_values($options)));
+        $options = (array)Option::getLike('ExcludeByDDNS.%');
+        return array_filter(
+            array_map(function ($elem) {
+                $elem = Common::safe_unserialize($elem);
+                return $elem['ip'];
+            }, array_values($options))
+        );
     }
 }

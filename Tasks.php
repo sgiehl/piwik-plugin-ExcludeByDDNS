@@ -1,8 +1,9 @@
 <?php
+
 /**
  * Matomo - free/libre analytics platform
  *
- * @link https://matomo.org
+ * @link    https://matomo.org
  * @license http://www.gnu.org/licenses/gpl-3.0.html GPL v3 or later
  *
  */
@@ -20,9 +21,9 @@ class Tasks extends \Piwik\Plugin\Tasks
 
     public function updateIPs()
     {
-        foreach(Storage::getAllUsersWithConfig() AS $user) {
+        foreach (Storage::getAllUsersWithConfig() as $user) {
             $storage = new Storage($user);
-            if(($hostname = $storage->getHostname())) {
+            if (($hostname = $storage->getHostname())) {
                 $ip = gethostbyname($hostname);
                 if ($ip != $hostname) {
                     $storage->setIp($ip);

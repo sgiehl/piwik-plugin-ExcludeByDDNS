@@ -1,8 +1,9 @@
 <?php
+
 /**
  * Matomo - free/libre analytics platform
  *
- * @link https://matomo.org
+ * @link    https://matomo.org
  * @license http://www.gnu.org/licenses/gpl-3.0.html GPL v3 or later
  *
  */
@@ -25,7 +26,7 @@ class ExcludeByDDNS extends \Piwik\Plugin
     public function registerEvents()
     {
         return [
-            'Tracker.isExcludedVisit' => 'checkIfIpIsExcluded',
+            'Tracker.isExcludedVisit'        => 'checkIfIpIsExcluded',
             'Tracker.setTrackerCacheGeneral' => 'setTrackerCacheGeneral',
         ];
     }
@@ -42,7 +43,7 @@ class ExcludeByDDNS extends \Piwik\Plugin
             return;
         }
 
-        $cache = Cache::getCacheGeneral();
+        $cache       = Cache::getCacheGeneral();
         $excludedIPs = $cache[self::__CACHE_ID__];
 
         if (empty($excludedIPs)) {

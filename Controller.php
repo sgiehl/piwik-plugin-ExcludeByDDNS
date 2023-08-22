@@ -1,8 +1,9 @@
 <?php
+
 /**
  * Matomo - free/libre analytics platform
  *
- * @link https://matomo.org
+ * @link    https://matomo.org
  * @license http://www.gnu.org/licenses/gpl-3.0.html GPL v3 or later
  *
  */
@@ -30,18 +31,20 @@ class Controller extends \Piwik\Plugin\ControllerAdmin
         $view = new View('@ExcludeByDDNS/admin');
         $this->setGeneralVariablesView($view);
 
-        $view->exclusions = array();
+        $view->exclusions = [];
 
         $users = Storage::getAllUsersWithConfig();
-        foreach ($users AS $user) {
-            $storage = new Storage($user);
-            $lastUpdated = $storage->getLastUpdated();
-            $view->exclusions[] = array(
-                'username' => $user,
-                'ip' => $storage->getIp(),
-                'hostname' => $storage->getHostname(),
-                'lastUpdated' => $lastUpdated ? Date::factory($lastUpdated)->getLocalized(Date::DATETIME_FORMAT_SHORT) : ''
-            );
+        foreach ($users as $user) {
+            $storage            = new Storage($user);
+            $lastUpdated        = $storage->getLastUpdated();
+            $view->exclusions[] = [
+                'username'    => $user,
+                'ip'          => $storage->getIp(),
+                'hostname'    => $storage->getHostname(),
+                'lastUpdated' => $lastUpdated ? Date::factory($lastUpdated)->getLocalized(
+                    Date::DATETIME_FORMAT_SHORT
+                ) : '',
+            ];
         }
 
         return $view->render();
@@ -61,7 +64,7 @@ class Controller extends \Piwik\Plugin\ControllerAdmin
         $this->setBasicVariablesView($view);
 
         if ($nonce !== false && Nonce::verifyNonce('Piwik_ExcludeHostname' . Piwik::getCurrentUserLogin(), $nonce)) {
-            if($hostname) {
+            if ($hostname) {
                 $ip = gethostbyname($hostname);
 
                 if ($ip != $hostname) {
@@ -69,24 +72,26 @@ class Controller extends \Piwik\Plugin\ControllerAdmin
                     $storage->setIp($ip);
                 } else {
                     $view->excludedHostname = $hostname;
-                    $view->hostnameError = true;
+                    $view->hostnameError    = true;
                 }
             } else {
                 $storage->setHostname('');
             }
         }
 
-        $view->updateUrl = Url::getCurrentUrlWithoutQueryString(false) . '?' . Url::getQueryStringFromParameters(array(
-                'module' => 'ExcludeByDDNS',
-                'action' => 'update',
-                'token_auth' => '{app_specific_token}'
-            ));
+        $view->updateUrl = Url::getCurrentUrlWithoutQueryString(false) . '?' . Url::getQueryStringFromParameters([
+                                                                                                                     'module'     => 'ExcludeByDDNS',
+                                                                                                                     'action'     => 'update',
+                                                                                                                     'token_auth' => '{app_specific_token}',
+                                                                                                                 ]);
 
         $view->excludedHostname = $storage->getHostname();
-        $view->excludedIp = $storage->getIp();
-        $lastUpdated = $storage->getLastUpdated();
-        $view->lastUpdated = $lastUpdated ? Date::factory($lastUpdated)->getLocalized(Date::DATETIME_FORMAT_SHORT) : '';
-        $view->nonce = Nonce::getNonce('Piwik_ExcludeHostname' . Piwik::getCurrentUserLogin(), 3600);
+        $view->excludedIp       = $storage->getIp();
+        $lastUpdated            = $storage->getLastUpdated();
+        $view->lastUpdated      = $lastUpdated ? Date::factory($lastUpdated)->getLocalized(
+            Date::DATETIME_FORMAT_SHORT
+        ) : '';
+        $view->nonce            = Nonce::getNonce('Piwik_ExcludeHostname' . Piwik::getCurrentUserLogin(), 3600);
 
         return $view->render();
     }
@@ -97,7 +102,7 @@ class Controller extends \Piwik\Plugin\ControllerAdmin
         Piwik::checkUserHasSomeViewAccess();
         Piwik::checkUserIsNotAnonymous();
 
-        $ip = IP::getIpFromHeader();
+        $ip   = IP::getIpFromHeader();
         $user = Piwik::getCurrentUserLogin();
 
         $storage = new Storage($user);

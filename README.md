@@ -1,7 +1,6 @@
 # Matomo Exclude IP By DDNS
 
-[![Build Status](https://travis-ci.org/sgiehl/piwik-plugin-ExcludeByDDNS.png?branch=4.x-dev)](https://travis-ci.com/sgiehl/piwik-plugin-ExcludeByDDNS)
-[![Flattr this git repo](http://api.flattr.com/button/flattr-badge-large.png)](https://flattr.com/submit/auto?user_id=sgiehl&url=https://github.com/sgiehl/piwik-plugin-ExcludeByDDNS&title=Piwik%20Plugin%20ExcludeByDDNS=&tags=github&category=software)
+[![Plugin ExcludeByDDNS Tests](https://github.com/sgiehl/piwik-plugin-ExcludeByDDNS/actions/workflows/matomo-tests.yml/badge.svg)](https://github.com/sgiehl/piwik-plugin-ExcludeByDDNS/actions/workflows/matomo-tests.yml)
 
 ## Description
 
@@ -9,7 +8,7 @@ This plugin allows the Matomo users to dynamically exclude their IP address usin
 
 ### Requirements
 
-[Matomo](https://github.com/matomo-org/matomo) 4.0.0 or higher is required.
+[Matomo](https://github.com/matomo-org/matomo) 5.0.0-b1 or higher is required.
 
 ### Features
 
@@ -45,6 +44,7 @@ There is no need to set user, password or domain name.
 
 ## Changelog
 
+- Version 5.0.0 - Compatibility for Matomo > 5.0.0
 - Version 4.0.0 - Compatibility for Matomo > 4.0.0
 - Version 3.0.0 - Compatibility for Piwik > 3.0.0
 - Version 0.4.0 - Compatibility for Piwik > 2.4.0

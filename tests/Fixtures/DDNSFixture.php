@@ -1,4 +1,5 @@
 <?php
+
 /**
  * Matomo - free/libre analytics platform
  *
@@ -22,17 +23,23 @@ class DDNSFixture extends Fixture
     {
         $this->setUpWebsite();
 
-        Option::set('ExcludeByDDNS.superUserLogin', serialize([
-            'hostname' => null,
-            'ip' => '192.168.12.5',
-            'lastUpdated' => Date::factory('2019-05-05 06:33:33')->getTimestamp(),
-        ]));
+        Option::set(
+            'ExcludeByDDNS.superUserLogin',
+            serialize([
+                          'hostname'    => null,
+                          'ip'          => '192.168.12.5',
+                          'lastUpdated' => Date::factory('2019-05-05 06:33:33')->getTimestamp(),
+                      ])
+        );
 
-        Option::set('ExcludeByDDNS.viewUserLogin', serialize([
-            'hostname' => 'my.ddns.host',
-            'ip' => '16.17.18.19',
-            'lastUpdated' => Date::factory('2019-07-05 16:30:03')->getTimestamp(),
-        ]));
+        Option::set(
+            'ExcludeByDDNS.viewUserLogin',
+            serialize([
+                          'hostname'    => 'my.ddns.host',
+                          'ip'          => '16.17.18.19',
+                          'lastUpdated' => Date::factory('2019-07-05 16:30:03')->getTimestamp(),
+                      ])
+        );
     }
 
     private function setUpWebsite()
