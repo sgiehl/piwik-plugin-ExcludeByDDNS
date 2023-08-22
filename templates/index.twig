@@ -3,7 +3,7 @@
 {% set title %}{{ 'ExcludeByDDNS_DDNSSettings'|translate }}{% endset %}
 
 {% block content %}
-    <div piwik-content-block content-title="{{ title|e('html_attr') }}">
+    <div vue-entry="CoreHome.ContentBlock" content-title="{{ title|e('html_attr') }}">
 
         <p>{{ 'ExcludeByDDNS_DDNSSettingsDescription'|translate }}</p>
 
@@ -32,7 +32,7 @@
         {% endif %}
         <form method="post" action="{{ linkTo([]) }}">
             <input type="hidden" name="nonce" value="{{ nonce }}"/>
-            <div piwik-field uicontrol="text" name="excludedHostname" id="excludedHostname" value="{{ excludedHostname }}"
+            <div vue-entry="CorePluginsAdmin.Field" uicontrol="text" name="excludedHostname" id="excludedHostname" value="{{ excludedHostname }}"
                  data-title="{{ 'ExcludeByDDNS_Hostname'|translate }}"></div>
             <input type="submit" value="{{ 'General_Save'|translate }}" class="btn" />
         </form>

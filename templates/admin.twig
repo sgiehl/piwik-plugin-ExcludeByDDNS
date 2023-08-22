@@ -3,7 +3,7 @@
 {% set title %}{{ 'ExcludeByDDNS_DDNSStatus'|translate }}{% endset %}
 
 {% block content %}
-    <div piwik-content-block content-title="{{ title|e('html_attr') }}">
+    <div vue-entry="CoreHome.ContentBlock" content-title="{{ title|e('html_attr') }}">
         <table class="tableForm dataTable entityTable">
             <thead>
             <tr>
