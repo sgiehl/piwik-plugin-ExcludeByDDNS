@@ -32,8 +32,8 @@
         {% endif %}
         <form method="post" action="{{ linkTo([]) }}">
             <input type="hidden" name="nonce" value="{{ nonce }}"/>
-            <div vue-entry="CorePluginsAdmin.Field" uicontrol="text" name="excludedHostname" id="excludedHostname" value="{{ excludedHostname }}"
-                 data-title="{{ 'ExcludeByDDNS_Hostname'|translate }}"></div>
+            <label for="excludedHostname">{{ 'ExcludeByDDNS_Hostname'|translate }}</label>
+            <input type="text" name="excludedHostname" id="excludedHostname" value="{{ excludedHostname }}" />
             <input type="submit" value="{{ 'General_Save'|translate }}" class="btn" />
         </form>
 
