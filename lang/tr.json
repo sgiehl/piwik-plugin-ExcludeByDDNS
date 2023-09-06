@@ -14,6 +14,6 @@
         "HostnameExclusionDesc2": "Güncelleme işlemi saatte bir sunucunun IP adresini çözümler",
         "NoExclusionsSet": "Katılmayacak IP adresi ayarlanmamış.",
         "NoIpExcluded": "Henüz katmadığınız bir IP adresi yok.",
-        "PluginDescription": "Bu uygulama eki bir DDNS güncellemesi kullanarak bir IP adresinin devingen olarak katılmamasını sağlar"
+        "PluginDescription": "Bu eklenti bir DDNS güncellemesi kullanarak bir IP adresinin devingen olarak katılmamasını sağlar"
     }
 }
