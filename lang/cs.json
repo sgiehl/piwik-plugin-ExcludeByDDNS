@@ -1,19 +1,19 @@
 {
     "ExcludeByDDNS": {
-        "PluginDescription": "Tento zásuvný modul vám umožňuje dynamicky vyloučit IP na základě aktualizace DDMS",
-        "DDNSSettings": "Nastavení DDNS",
-        "DDNSStatus": "Stav DDNS",
-        "DDNSSettingsDescription": "Zde můžete změnit nastavení vyloučení vaší dynamické ip adresy.",
         "CurrentExcludedIp": "Vaše aktuálně vyloučená IP je %1$s (poslední aktualizace %2$s)",
-        "NoIpExcluded": "Aktuálně nemáte nastavenou vyloučenou IP.",
+        "DDNSSettings": "Nastavení DDNS",
+        "DDNSSettingsDescription": "Zde můžete změnit nastavení vyloučení vaší dynamické ip adresy.",
+        "DDNSStatus": "Stav DDNS",
         "DDNSUpdateExclusion": "Použít DDNS aktualizaci pro obnovení vyloučené IP",
         "DDNSUpdateExclusionDesc": "Pokud chcete vaši dynamickou IP adresu vyloučit pomocí DDNS aktualizace, použijte následující URL:",
         "DDNSUpdateExclusionDesc2": "Nemusíte zadávat žádné další údaje, jako jsou jméno hostitele, uživatelské jméno a heslo. Zadejte je, pokud jsou potřeba.",
-        "HostnameExclusion": "Použít automaticky aktualizované jméno hostitele k obnovení vyloučené IP",
-        "HostnameExclusionDesc": "Obnovit vyloučenou IP",
-        "HostnameExclusionDesc2": "Aktualizace bude prováděna jako hodinová úloha, která určí jméno hostitele IP.",
-        "NoExclusionsSet": "Aktuálně nejsou nakonfigurována žádná vyloučení.",
         "Hostname": "Jméno hostiteleJméno hostitele",
-        "HostnameError": "Nepodařilo se určit IP daného hostitele"
+        "HostnameError": "Nepodařilo se určit IP daného hostitele",
+        "HostnameExclusion": "Použít automaticky aktualizované jméno hostitele k obnovení vyloučené IP",
+        "HostnameExclusionDesc": "Pokud už používáte DDNS update pro aktualizaci hostnamu, můžete hostname použít pro vyloučení jeho IP adresy.",
+        "HostnameExclusionDesc2": "V rámci aktualizace se každou hodinu přeloží hostname na odpovídající IP adresu",
+        "NoExclusionsSet": "Aktuálně nejsou nakonfigurována žádná vyloučení.",
+        "NoIpExcluded": "Aktuálně nemáte nastavenou vyloučenou IP.",
+        "PluginDescription": "Tento zásuvný modul vám umožňuje dynamicky vyloučit IP na základě aktualizace DDMS"
     }
 }
