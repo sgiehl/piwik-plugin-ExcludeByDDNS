@@ -1,1 +1,19 @@
-{}
+{
+    "ExcludeByDDNS": {
+        "CurrentExcludedIp": "Une honetan baztertutako IPen zerrenda hau da: %1$s (azken eguneratzea: %2$s)",
+        "DDNSSettings": "DDNS ezarpenak",
+        "DDNSSettingsDescription": "Zure IP helbide dinamikoak baztertzeko ezarpenak.",
+        "DDNSStatus": "DDNS egoera",
+        "DDNSUpdateExclusion": "Erabili DDNS eguneratze bat baztertutako IPa freskatzeko",
+        "DDNSUpdateExclusionDesc": "Erabili ondorengo URLa zure IP helbide dinamikoak baztertzeko DDNS eguneratze bat erabiliz:",
+        "DDNSUpdateExclusionDesc2": "Ez da derrigorrezkoa ostalari-izena, erabiltzaile-izena edo pasahitza ematea. Utzi eremuak hutsik edo idatzi edozein balio beharrezkoa bada.",
+        "Hostname": "Ostalari-izena",
+        "HostnameError": "Ezin da ebatzi emandako ostalari-izenaren IPa",
+        "HostnameExclusion": "Baztertu automatikoki eguneratutako ostalari-izen baten IPa",
+        "HostnameExclusionDesc": "Dagoeneko DDNS eguneratze bat erabiltzen ari bazara ostalari-izen zehatz bat eguneratzeko, ostalari-izen hau erabili dezakezu bere IPa baztertzeko.",
+        "HostnameExclusionDesc2": "Eguneratzeak ostalari-izenaren IPa orduero ebatziko du",
+        "NoExclusionsSet": "Ez dago IP baztertzerik konfiguratuta.",
+        "NoIpExcluded": "Ez duzu IPrik baztertu oraindik.",
+        "PluginDescription": "Plugin honek IP bat dinamikoki baztertzeko aukera ematen dizu DDNS eguneratze bat erabiliz"
+    }
+}
