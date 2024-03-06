@@ -6,7 +6,7 @@
         "DDNSStatus": "Estado do DDNS",
         "DDNSUpdateExclusion": "Use uma atualização de DDNS para atualizar o IP excluído",
         "DDNSUpdateExclusionDesc": "Use o seguinte URL para excluir seu endereço IP dinâmico usando uma atualização DDNS:",
-        "DDNSUpdateExclusionDesc2": "Fornecer nome de host, nome de usuário ou senha não é necessário. Deixe-os vazios ou digite qualquer coisa se um valor for necessário.",
+        "DDNSUpdateExclusionDesc2": "Não é necessário fornecer o nome do hospedeiro, nome de utilizador ou palavra-passe. Deixe-os em branco ou digite qualquer coisa se for necessário um valor.",
         "Hostname": "Nome do servidor",
         "HostnameError": "Não foi possível obter o IP para o nome de servidor fornecido",
         "HostnameExclusion": "Excluir o IP de um nome de host atualizado automaticamente",
