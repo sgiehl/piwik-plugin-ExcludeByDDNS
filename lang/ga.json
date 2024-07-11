@@ -1,1 +1,19 @@
-{}
+{
+    "ExcludeByDDNS": {
+        "CurrentExcludedIp": "Is é an seoladh IP atá agat as an áireamh faoi láthair: %1$s (nuashonrú is déanaí: %2$s)",
+        "DDNSSettings": "Socruithe DDNS",
+        "DDNSSettingsDescription": "Socruithe chun do sheoladh IP dinimiciúil a eisiamh.",
+        "DDNSStatus": "Stádas DDNS",
+        "DDNSUpdateExclusion": "Úsáid nuashonrú DDNS chun an IP eisiata a athnuachan",
+        "DDNSUpdateExclusionDesc": "Úsáid an URL seo a leanas chun do sheoladh IP dinimiciúil a eisiamh ag baint úsáide as nuashonrú DDNS:",
+        "DDNSUpdateExclusionDesc2": "Ní gá óstainm, ainm úsáideora nó pasfhocal a sholáthar. Fág folamh iad nó clóscríobh rud ar bith má tá luach ag teastáil.",
+        "Hostname": "Óstainm",
+        "HostnameError": "Ní féidir IP an óstainm a tugadh a réiteach",
+        "HostnameExclusion": "Fág as an áireamh IP óstainm uath-nuashonraithe",
+        "HostnameExclusionDesc": "Má tá nuashonrú DDNS in úsáid agat cheana féin chun óstainm ar leith a nuashonrú, is féidir leat an t-óstainm seo a úsáid chun a IP a eisiamh.",
+        "HostnameExclusionDesc2": "Réiteoidh an nuashonrú IP an óstainm gach uair an chloig",
+        "NoExclusionsSet": "Ní chuirtear aon eisiamh IP ar bun.",
+        "NoIpExcluded": "Níl aon IP eisiata agat fós.",
+        "PluginDescription": "Ligeann an breiseán seo duit IP a eisiamh go dinimiciúil ag baint úsáide as nuashonrú DDNS"
+    }
+}
