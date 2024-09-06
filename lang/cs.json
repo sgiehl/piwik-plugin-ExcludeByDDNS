@@ -1,13 +1,13 @@
 {
     "ExcludeByDDNS": {
-        "CurrentExcludedIp": "Vaše aktuálně vyloučená IP je %1$s (poslední aktualizace %2$s)",
+        "CurrentExcludedIp": "Vaše aktuálně vyloučená IP je: %1$s (poslední aktualizace: %2$s)",
         "DDNSSettings": "Nastavení DDNS",
         "DDNSSettingsDescription": "Zde můžete změnit nastavení vyloučení vaší dynamické ip adresy.",
         "DDNSStatus": "Stav DDNS",
         "DDNSUpdateExclusion": "Použít DDNS aktualizaci pro obnovení vyloučené IP",
         "DDNSUpdateExclusionDesc": "Pokud chcete vaši dynamickou IP adresu vyloučit pomocí DDNS aktualizace, použijte následující URL:",
         "DDNSUpdateExclusionDesc2": "Nemusíte zadávat žádné další údaje, jako jsou jméno hostitele, uživatelské jméno a heslo. Zadejte je, pokud jsou potřeba.",
-        "Hostname": "Jméno hostiteleJméno hostitele",
+        "Hostname": "Jméno hostitele",
         "HostnameError": "Nepodařilo se určit IP daného hostitele",
         "HostnameExclusion": "Použít automaticky aktualizované jméno hostitele k obnovení vyloučené IP",
         "HostnameExclusionDesc": "Pokud už používáte DDNS update pro aktualizaci hostnamu, můžete hostname použít pro vyloučení jeho IP adresy.",
