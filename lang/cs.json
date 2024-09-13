@@ -2,18 +2,18 @@
     "ExcludeByDDNS": {
         "CurrentExcludedIp": "Vaše aktuálně vyloučená IP je: %1$s (poslední aktualizace: %2$s)",
         "DDNSSettings": "Nastavení DDNS",
-        "DDNSSettingsDescription": "Zde můžete změnit nastavení vyloučení vaší dynamické ip adresy.",
+        "DDNSSettingsDescription": "Nastavení pro vyloučení dynamické IP adresy.",
         "DDNSStatus": "Stav DDNS",
-        "DDNSUpdateExclusion": "Použít DDNS aktualizaci pro obnovení vyloučené IP",
-        "DDNSUpdateExclusionDesc": "Pokud chcete vaši dynamickou IP adresu vyloučit pomocí DDNS aktualizace, použijte následující URL:",
-        "DDNSUpdateExclusionDesc2": "Nemusíte zadávat žádné další údaje, jako jsou jméno hostitele, uživatelské jméno a heslo. Zadejte je, pokud jsou potřeba.",
+        "DDNSUpdateExclusion": "K obnovení vyloučené IP adresy použijte aktualizaci DDNS",
+        "DDNSUpdateExclusionDesc": "Pro vyloučení dynamické IP adresy pomocí aktualizace DDNS použijte následující adresu URL:",
+        "DDNSUpdateExclusionDesc2": "Zadání názvu hostitele, uživatelského jména nebo hesla není nutné. Nechte je prázdné nebo zadejte cokoli, pokud je hodnota vyžadována.",
         "Hostname": "Jméno hostitele",
         "HostnameError": "Nepodařilo se určit IP daného hostitele",
-        "HostnameExclusion": "Použít automaticky aktualizované jméno hostitele k obnovení vyloučené IP",
+        "HostnameExclusion": "Vyloučení IP adresy automaticky aktualizovaného názvu hostitele",
         "HostnameExclusionDesc": "Pokud už používáte DDNS update pro aktualizaci hostnamu, můžete hostname použít pro vyloučení jeho IP adresy.",
         "HostnameExclusionDesc2": "V rámci aktualizace se každou hodinu přeloží hostname na odpovídající IP adresu",
-        "NoExclusionsSet": "Aktuálně nejsou nakonfigurována žádná vyloučení.",
-        "NoIpExcluded": "Aktuálně nemáte nastavenou vyloučenou IP.",
-        "PluginDescription": "Tento zásuvný modul vám umožňuje dynamicky vyloučit IP na základě aktualizace DDMS"
+        "NoExclusionsSet": "Nejsou nastavena žádná vyloučení IP.",
+        "NoIpExcluded": "Zatím jste nevyloučili žádnou IP adresu.",
+        "PluginDescription": "Tento plugin umožňuje dynamicky vyloučit IP pomocí aktualizace DDNS"
     }
 }
