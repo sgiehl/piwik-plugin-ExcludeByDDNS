@@ -10,8 +10,8 @@
         "Hostname": "Nom d'hôte",
         "HostnameError": "Impossible de résoudre l'adresse IP associée au nom d'hôte fourni",
         "HostnameExclusion": "Exclure l'IP d'un nom d'hôte mis à jour automatiquement",
-        "HostnameExclusionDesc": "Si vous utilisez déjà une mise à jour DDNS pour mettre à jour un nom d'hôte vous pouvez utiliser ce nom d'hôte pour rafraîchir l'IP exclue.",
-        "HostnameExclusionDesc2": "La mise à jour sera effectuée via une tâche toutes les heures qui résoudra l'IP du nom d'hôte",
+        "HostnameExclusionDesc": "Si vous utilisez déjà une mise à jour DDNS pour actualiser un nom d'hôte spécifique, vous pouvez utiliser ce nom d'hôte pour exclure son IP.",
+        "HostnameExclusionDesc2": "La mise à jour résoudra l'IP du nom d'hôte toutes les heures",
         "NoExclusionsSet": "Il n'y a aucune exclusion configurée pour l'instant.",
         "NoIpExcluded": "Vous n'avez exclu aucune adresse IP.",
         "PluginDescription": "Ce composant vous permet d'exclure une IP de manière dynamique en utilisant les mises à jour DDNS"
