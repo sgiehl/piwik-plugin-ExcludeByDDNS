@@ -8,7 +8,7 @@
         "DDNSUpdateExclusionDesc": "Utilice la siguiente URL para excluir su dirección IP dinámica mediante una actualización de DDNS:",
         "DDNSUpdateExclusionDesc2": "No es necesario proporcionar el nombre de host, el nombre de usuario o la contraseña. Déjelos vacíos o escriba cualquier cosa si se requiere un valor.",
         "Hostname": "Nombre del Host",
-        "HostnameError": "No se puede resolver la IP del hostname dado",
+        "HostnameError": "No se puede resolver la IP del nombre dado de servidor",
         "HostnameExclusion": "Excluir la IP de un nombre de host actualizado automáticamente",
         "HostnameExclusionDesc": "Si ya usa una actualización de DDNS para actualizar un nombre de host específico, puede usar este nombre de host para excluir su IP.",
         "HostnameExclusionDesc2": "La actualización resolverá la IP del nombre de host cada hora",
