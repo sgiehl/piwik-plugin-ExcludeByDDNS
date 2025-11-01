@@ -4,6 +4,7 @@
         "DDNSSettings": "Tetapan DDNS",
         "DDNSSettingsDescription": "Tetapan untuk mengecualikan alamat IP dinamik anda.",
         "DDNSStatus": "Status DDNS",
+        "Hostname": "Nama hos",
         "NoIpExcluded": "Anda belum mengecualikan sebarang IP lagi.",
         "PluginDescription": "Pemalam ini membolehkan anda mengecualikan IP secara dinamik menggunakan kemas kini DDNS"
     }
