@@ -12,7 +12,7 @@
         "HostnameExclusion": "Exclure l'IP d'un nom d'hôte mis à jour automatiquement",
         "HostnameExclusionDesc": "Si vous utilisez déjà une mise à jour DDNS pour actualiser un nom d'hôte spécifique, vous pouvez utiliser ce nom d'hôte pour exclure son IP.",
         "HostnameExclusionDesc2": "La mise à jour résoudra l'IP du nom d'hôte toutes les heures",
-        "NoExclusionsSet": "Il n'y a aucune exclusion configurée pour l'instant.",
+        "NoExclusionsSet": "Aucune exclusion d'adresse IP n'est configurée.",
         "NoIpExcluded": "Vous n'avez exclu aucune adresse IP.",
         "PluginDescription": "Ce composant vous permet d'exclure une IP de manière dynamique en utilisant les mises à jour DDNS"
     }
