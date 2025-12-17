@@ -1,6 +1,7 @@
 {
     "ExcludeByDDNS": {
         "DDNSSettings": "DDNS nustatymai",
-        "DDNSStatus": "DDNS Būsena"
+        "DDNSStatus": "DDNS Būsena",
+        "Hostname": "Pagrindinio kompiuterio vardas"
     }
 }
