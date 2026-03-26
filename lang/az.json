@@ -1,1 +1,5 @@
-{}
+{
+    "ExcludeByDDNS": {
+        "PluginDescription": "Bu qoşma, DDNS yeniləməsindən istifadə edərək IP ünvanını dinamik olaraq istisna etməyə imkan verir"
+    }
+}
