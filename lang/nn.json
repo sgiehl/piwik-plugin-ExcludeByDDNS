@@ -1,1 +1,19 @@
-{}
+{
+    "ExcludeByDDNS": {
+        "CurrentExcludedIp": "IP-adressa som er utelaten no, er: %1$s (sist oppdatert: %2$s)",
+        "DDNSSettings": "DDNS-innstillingar",
+        "DDNSSettingsDescription": "Innstillingar for å utelate den dynamiske IP-adressa di.",
+        "DDNSStatus": "DDNS-status",
+        "DDNSUpdateExclusion": "Bruk ei DDNS-oppdatering for å oppdatere den utelatne IP-adressa",
+        "DDNSUpdateExclusionDesc": "Bruk denne URL-en for å utelate den dynamiske IP-adressa di med ei DDNS-oppdatering:",
+        "DDNSUpdateExclusionDesc2": "Du treng ikkje oppgi vertsnamn, brukarnamn eller passord. La felta stå tomme, eller skriv kva som helst viss det må vere ein verdi.",
+        "Hostname": "Vertsnamn",
+        "HostnameError": "Klarte ikkje å slå opp IP-adressa til vertsnamnet",
+        "HostnameExclusion": "Utelat IP-adressa til eit vertsnamn som blir oppdatert automatisk",
+        "HostnameExclusionDesc": "Viss du allereie brukar ei DDNS-oppdatering for å oppdatere eit bestemt vertsnamn, kan du bruke vertsnamnet til å utelate IP-adressa.",
+        "HostnameExclusionDesc2": "Oppdateringa slår opp IP-adressa til vertsnamnet kvar time",
+        "NoExclusionsSet": "Ingen IP-adresser er sette opp som utelatne.",
+        "NoIpExcluded": "Du har ikkje utelate nokon IP-adresse enno.",
+        "PluginDescription": "Med dette innstikket kan du utelate ei IP-adresse dynamisk med ei DDNS-oppdatering"
+    }
+}
