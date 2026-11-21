@@ -1,5 +1,19 @@
 {
     "ExcludeByDDNS": {
-        "DDNSSettings": "Setări DDNS"
+        "CurrentExcludedIp": "Adresa IP exclusă în prezent este: %1$s (ultima actualizare: %2$s)",
+        "DDNSSettings": "Setări DDNS",
+        "DDNSSettingsDescription": "Setări pentru excluderea adresei IP dinamice.",
+        "DDNSStatus": "Stare DDNS",
+        "DDNSUpdateExclusion": "Folosiți o actualizare DDNS pentru a reîmprospăta adresa IP exclusă",
+        "DDNSUpdateExclusionDesc": "Folosiți următorul URL pentru a exclude adresa IP dinamică printr-o actualizare DDNS:",
+        "DDNSUpdateExclusionDesc2": "Nu este necesar să furnizați numele de gazdă, numele de utilizator sau parola. Lăsați-le goale sau introduceți orice text dacă este necesară o valoare.",
+        "Hostname": "Nume de gazdă",
+        "HostnameError": "Nu se poate rezolva adresa IP a numelui de gazdă indicat",
+        "HostnameExclusion": "Excludeți adresa IP a unui nume de gazdă actualizat automat",
+        "HostnameExclusionDesc": "Dacă folosiți deja o actualizare DDNS pentru a actualiza un anumit nume de gazdă, puteți folosi acest nume de gazdă pentru a exclude adresa sa IP.",
+        "HostnameExclusionDesc2": "Actualizarea va rezolva adresa IP a numelui de gazdă în fiecare oră",
+        "NoExclusionsSet": "Nu este configurată nicio excludere de IP.",
+        "NoIpExcluded": "Nu ați exclus încă nicio adresă IP.",
+        "PluginDescription": "Acest plugin vă permite să excludeți dinamic o adresă IP cu ajutorul unei actualizări DDNS"
     }
 }
